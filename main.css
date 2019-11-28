@@ -40,25 +40,26 @@ nav {
 /*******************
 *** VIDEO HEADER ***
 *******************/
+.video-effect {
+  height: 75vh;
+}
 
-#vid-header {
+.overlay-effect {
   position: relative;
   top: 0;
   background-color: black;
-  height: 75vh;
-  min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
 
-#vid-header h1 {
+.overlay-effect h1 {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 8px;
 }
 
-#vid-header video {
+.overlay-effect video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,12 +74,12 @@ nav {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#vid-header .container {
+.overlay-effect .container {
   position: relative;
   z-index: 2;
 }
 
-#vid-header .overlay {
+.video-effect .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,6 +102,8 @@ nav {
   opacity: 0.4;
   z-index: 1;
 }
+
+
 
 /********************
 *** BORDER BUTTON ***
@@ -168,6 +171,18 @@ nav {
   text-transform: uppercase;
   color: black;
 }
+
+.lspace {
+  letter-spacing: 2px;
+  text-transform: none;
+}
+
+#parallax-world-of-ugg .definition {
+  line-height: 1.3;
+  text-transform: none;
+  letter-spacing: 3px;
+}
+
 #parallax-world-of-ugg p {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -221,7 +236,7 @@ nav {
   background: #f2f2f2;
   padding: 60px;
 }
-#parallax-world-of-ugg .section-overlay-mask {
+.overlay-mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,7 +352,7 @@ nav {
     height: 70px;
   }
 
-  #vid-header {
+  .video-effect {
     height: 60vh;
   }
 
@@ -359,7 +374,7 @@ nav {
     font-size: 1.75rem;
   }
 
-  #vid-header h1 {
+  .overlay-effect h1 {
     font-size: 3.25em;
   }
 }
@@ -368,7 +383,7 @@ nav {
   .smaller-lg {
     font-size: 1.5rem;
   }
-  #vid-header h1 {
+  .overlay-effect h1 {
     font-size: 2.25em;
   }
 }
