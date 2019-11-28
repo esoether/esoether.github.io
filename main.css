@@ -107,17 +107,16 @@ nav {
 ********************/
 .border-button {
   background-color: #fff;
-    color: #101832;
-    cursor: pointer;
-    letter-spacing: 0.075em;
-    padding: 0.8em 1em;
-    text-transform: uppercase;
-    border: 3px #00bcdd solid;
-    border-image: linear-gradient(45deg, #000000 0%, #ff9800 100%);
-    border-image-slice: 1 1 1 1;
-    box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
+  color: #101832;
+  cursor: pointer;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  text-transform: uppercase;
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(45deg, #000000 0%, #ff9800 100%);
+  border-image-slice: 1 1 1 1;
+  box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
 }
-
 
 .border-button:hover {
   text-decoration: none;
@@ -151,7 +150,7 @@ nav {
 }
 #parallax-world-of-ugg h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 70px;
+  font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
   color: white;
@@ -187,7 +186,7 @@ nav {
 }
 
 .sc {
-  color: #3b8595;
+  color: #c47c60;
 }
 .ny {
   color: #3d3c3a;
@@ -235,12 +234,12 @@ nav {
 /* Section - Parallax */
 /**************************/
 #parallax-world-of-ugg .parallax-one {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1556388275-bb5585725aca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=);
+  background-image: url(bg2.png);
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -249,12 +248,12 @@ nav {
   background-position: top center;
 }
 #parallax-world-of-ugg .parallax-two {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1478971408687-8820951f5a62?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
+  background-image: url(bg1.png);
   background-attachment: fixed;
   background-size: cover;
   -moz-background-size: cover;
@@ -323,8 +322,10 @@ nav {
 ********************/
 
 .card {
-  border-radius: 0.3rem !important;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15) !important;
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(135deg, #ff9800 0%, #000000 100%);
+  border-image-slice: 1 1 1 1;
 }
 
 @media screen and (max-width: 767px) {
