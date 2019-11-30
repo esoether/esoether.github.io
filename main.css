@@ -103,6 +103,10 @@ nav {
   z-index: 1;
 }
 
+.artist-meet {
+  background: url(bg1.png);
+  background-size: cover;
+}
 
 
 /********************
@@ -263,8 +267,8 @@ nav {
   background-position: top center;
 }
 #parallax-world-of-ugg .parallax-two {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -408,7 +412,7 @@ nav {
   position: absolute;
   margin: 0 auto;
   height: 3px;
-  background: #8fbc54;
+  background: #eb7500;
   left: 0;
   right: 0;
   bottom: -10px;
@@ -456,7 +460,7 @@ nav {
 
 .carousel .overview b {
   text-transform: uppercase;
-  color: #7aa641;
+  color: #eb7500;
 }
 
 .carousel .carousel-control {
