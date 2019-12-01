@@ -1,0 +1,165 @@
+<!-- <section>
+           <div class="block">
+            <p>
+              <span class="first-character ny">B</span>reaking into the New York
+              fashion world is no easy task. But by the early 2000's, UGG
+              Australia began to take it by storm. The evolution of UGG from a
+              world and UGG was now perfectly aligned with this movement.
+            </p>
+          </div> -->
+          <!--SERVICES-->
+          <!-- <section class="contact-section bg-black mb-4 mt-2">
+
+
+<!-- <section>
+          <div class="parallax-one px-3">
+            <div class="above-overlay">
+              <h3 class="text-left text-light">
+                Ether <span class="small lspace">\ ˈē-thər \ [GREEK]</span>
+              </h3>
+              <h3 class="definition text-light">
+                the pure essence that the gods breathe, filling the region of
+                the universe above the terrestrial sphere
+              </h3>
+            </div>
+          </div>
+        </section> -->
+
+
+<!-- <section>
+           <div class="block">
+            <p>
+              <span class="first-character ny">B</span>reaking into the New York
+              fashion world is no easy task. But by the early 2000's, UGG
+              Australia began to take it by storm. The evolution of UGG from a
+              world and UGG was now perfectly aligned with this movement.
+            </p>
+          </div> -->
+          <!--SERVICES-->
+          <!-- <section class="contact-section bg-black mb-4 mt-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Sigils</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        If you need a uniquely charged symbol that represents
+                        your higher-purpose work, we can help.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Voice</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        We infuse the written words on your website with power,
+                        heart, and personality that inspires.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Presence</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        Your vision functions as our guide into the ether where.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Growth</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        Your vision functions as our guide into the ether where.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section> -->
+
+
+
+
+
+
+
+
+
+        <!-- <div class="block">
+            <p>
+              <span class="first-character ny">B</span>reaking into the New York
+              fashion world is no easy task. But by the early 2000's, UGG
+              Australia began to take it by storm. The evolution of UGG from a
+              world and UGG was now perfectly aligned with this movement.
+            </p>
+          </div> -->
+          <!--SERVICES-->
+          <!-- <section class="contact-section bg-black mb-4 mt-2">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Sigils</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        If you need a uniquely charged symbol that represents
+                        your higher-purpose work, we can help.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Voice</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        We infuse the written words on your website with power,
+                        heart, and personality that inspires.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Presence</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        Your vision functions as our guide into the ether where.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 p-1 mb-3 mb-md-0">
+                  <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                      <h4 class="text-uppercase m-0">Growth</h4>
+                      <hr class="my-4" />
+                      <div class="small">
+                        Your vision functions as our guide into the ether where.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->

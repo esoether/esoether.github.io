@@ -8,6 +8,11 @@ nav {
   width: 100%;
 }
 
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
 .navbar-toggler {
   margin-top: 8px;
   border: none;
@@ -146,7 +151,7 @@ nav {
 
 /* Typography */
 /**************************/
-#parallax-world-of-ugg h1 {
+h1 {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -155,7 +160,7 @@ nav {
   padding: 0;
   margin: 0;
 }
-#parallax-world-of-ugg h2 {
+h2 {
   font-family: "Oswald", sans-serif;
   font-size: 40px;
   letter-spacing: 10px;
@@ -166,7 +171,7 @@ nav {
   z-index: 10;
   opacity: 0.9;
 }
-#parallax-world-of-ugg h3 {
+h3 {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 1.3;
