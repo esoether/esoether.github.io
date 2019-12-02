@@ -371,6 +371,7 @@ h3 {
 
   #navbarToggle {
     position: absolute;
+    border-bottom: 2px solid #dee2e6!important;
     text-align: center;
     top: 70px;
     left: 0;
