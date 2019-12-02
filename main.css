@@ -1,28 +1,31 @@
-nav {
-  font-weight: 400;
-  height: 100px;
-  position: absolute;
-  top: 0;
-  z-index: 9999;
-  background: white;
-  width: 100%;
+body {
+  font-family: "Oswald", sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 
+.smaller-lg {
+  font-size: 2.5rem;
+}
+
+/*************
+*** NAVBAR ***
+*************/
+
+nav {
+  font-weight: 400;
+  background: white;
+}
+
 .navbar-toggler {
-  margin-top: 8px;
+  margin-top: 6px;
   border: none;
 }
 
 .navbar-brand {
-  font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
-  font-size: 20px;
-  text-transform: uppercase;
 }
 
 #navbarToggle {
@@ -34,54 +37,20 @@ h1, h2, h3 {
   padding: 5px 0;
 }
 
-#video-text {
-  font-size: 4rem;
-}
-
-.smaller-lg {
-  font-size: 2.5rem;
-}
 
 /*******************
 *** VIDEO HEADER ***
 *******************/
-.video-effect {
-  height: 75vh;
-}
-
-.overlay-effect {
-  position: relative;
-  top: 0;
-  background-color: black;
-  width: 100%;
-  overflow: hidden;
-}
-
-.overlay-effect h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
+#video-text {
+  font-size: 4rem;
   letter-spacing: 8px;
 }
 
-.overlay-effect video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.overlay-effect .container {
+.video-effect {
+  height: 75vh;
   position: relative;
-  z-index: 2;
+  background-color: black;
+  overflow: hidden;
 }
 
 .video-effect .overlay {
@@ -108,6 +77,30 @@ h1, h2, h3 {
   z-index: 1;
 }
 
+.video-effect video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-effect .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/****************
+*** BIOGRAPHY ***
+****************/
 .artist-meet {
   background: url(bg1.png);
   background-size: cover;
@@ -137,31 +130,16 @@ h1, h2, h3 {
   border-image: linear-gradient(45deg, #ff9800 0%, #000000 100%);
   border-image-slice: 1 1 1 1;
 }
+
+
 /********************
 *** PARALLAX PICS ***
 ********************/
-/* Helpers */
-/**************************/
-.margin-top-10 {
-  padding-top: 10px;
-}
-.margin-bot-10 {
-  padding-bottom: 10px;
-}
 
 /* Typography */
 /**************************/
-h1 {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: black;
-  padding: 0;
-  margin: 0;
-}
+
 h2 {
-  font-family: "Oswald", sans-serif;
   font-size: 40px;
   letter-spacing: 10px;
   text-align: center;
