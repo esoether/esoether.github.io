@@ -26,6 +26,30 @@ h3 {
   }
 }
 
+/********************
+*** BORDER BUTTON ***
+********************/
+.border-button {
+  background-color: #fff;
+  color: #101832;
+  cursor: pointer;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  text-transform: uppercase;
+  border: 3px #00bcdd solid;
+  border-image: linear-gradient(45deg, #000000 0%, #ff9800 100%);
+  border-image-slice: 1 1 1 1;
+  box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
+}
+
+.border-button:hover {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  border-image: linear-gradient(45deg, #ff9800 0%, #000000 100%);
+  border-image-slice: 1 1 1 1;
+}
+
 /*************
 *** NAVBAR ***
 *************/
@@ -112,6 +136,25 @@ nav {
   z-index: 2;
 }
 
+/******************
+*** SNAG N HOOK ***
+******************/
+.snag, .hook {
+  padding: 0 10px 0 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .snag, .hook {
+    padding-right: 75px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .snag, .hook {
+    padding-right: 200px;
+  }
+}
+
 /****************
 *** BIOGRAPHY ***
 ****************/
@@ -120,29 +163,7 @@ nav {
   background-size: cover;
 }
 
-/********************
-*** BORDER BUTTON ***
-********************/
-.border-button {
-  background-color: #fff;
-  color: #101832;
-  cursor: pointer;
-  letter-spacing: 0.075em;
-  padding: 0.8em 1em;
-  text-transform: uppercase;
-  border: 3px #00bcdd solid;
-  border-image: linear-gradient(45deg, #000000 0%, #ff9800 100%);
-  border-image-slice: 1 1 1 1;
-  box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
-}
 
-.border-button:hover {
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  border-image: linear-gradient(45deg, #ff9800 0%, #000000 100%);
-  border-image-slice: 1 1 1 1;
-}
 
 /********************
 *** PARALLAX PICS ***
