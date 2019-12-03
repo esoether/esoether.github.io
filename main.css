@@ -140,7 +140,13 @@ nav {
 *** SNAG N HOOK ***
 ******************/
 .snag, .hook {
-  padding: 0 10px 0 50px;
+  padding: 0 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .snag, .hook {
+    padding: 0 10px 0 50px;
+  }  
 }
 
 @media screen and (min-width: 1000px) {
