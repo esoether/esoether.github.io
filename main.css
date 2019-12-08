@@ -139,26 +139,37 @@ nav {
 /******************
 *** SNAG N HOOK ***
 ******************/
-.snag, .hook {
+.snag,
+.hook {
   padding: 0 50px;
 }
 
 @media screen and (min-width: 767px) {
-  .snag, .hook {
+  .snag,
+  .hook {
     padding: 0 10px 0 50px;
-  }  
+  }
 }
 
 @media screen and (min-width: 1000px) {
-  .snag, .hook {
+  .snag,
+  .hook {
     padding-right: 75px;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .snag, .hook {
+  .snag,
+  .hook {
     padding-right: 200px;
   }
+}
+
+/****************
+*** PORTFOLIO ***
+****************/
+.portfolio-item {
+  padding: 0px;
 }
 
 /****************
@@ -168,8 +179,6 @@ nav {
   background: url(bg1.png);
   background-size: cover;
 }
-
-
 
 /********************
 *** PARALLAX PICS ***
@@ -327,12 +336,27 @@ h3 {
 
 /* Media Queries */
 /**************************/
+@media screen and (min-width: 768px) {
+  .nav-item {
+    margin-right: 50px;
+  }
+
+  .nav-item:first-child {
+    margin-left: 10px;
+  }
+
+  .nav-item:last-child {
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 959px) and (min-width: 768px) {
   #parallax-world-of-ugg .block {
     padding: 40px;
     width: 620px;
   }
 }
+
 @media screen and (max-width: 767px) {
   #parallax-world-of-ugg .block {
     padding: 30px;
