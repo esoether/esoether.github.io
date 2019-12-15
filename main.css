@@ -5,16 +5,25 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Cookie', cursive;
+  font-family: "Cookie", cursive;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.navbar-brand {
-  font-family: 'Cookie', cursive;
+nav {
+  border-image: linear-gradient(45deg, #6a1b9a 0%, #aa00ff 100%);
+
+  border-image-slice: 1 1 1 1;
+  box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
 }
 
+.navbar-brand {
+  font-family: "Cookie", cursive;
+}
 
+.navbar-right .nav-item:last-child {
+  margin-right: 0px;
+}
 
 .section-header {
   padding: 40px 0 20px;
@@ -35,8 +44,8 @@ h3 {
   padding: 0.8em 1em;
   font-weight: 600;
   text-transform: uppercase;
-  border: 3px #00bcdd solid;
-  border-image: linear-gradient(45deg, #6A1B9A 0%, #AA00FF 100%);
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #aa00ff 0%, #6a1b9a 100%);
   border-image-slice: 1 1 1 1;
   box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
 }
@@ -44,9 +53,32 @@ h3 {
 .border-button:hover {
   text-decoration: none;
   color: #000;
-  border-image: linear-gradient(45deg, #AA00FF 0%, #6A1B9A 100%);
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #6a1b9a 0%, #aa00ff 100%);
   border-image-slice: 1 1 1 1;
   box-shadow: -0.3em 0.3em 5px rgba(16, 24, 50, 0.3);
+}
+
+.border-button-2 {
+  background-color: #fff;
+  color: #101832;
+  cursor: pointer;
+  letter-spacing: 0.075em;
+  padding: 0.7em 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #feaa20 0%, #ffd250 100%);
+  border-image-slice: 1 1 1 1;
+  box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
+}
+
+.yellow {
+  color: #feaa20;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#feaa20, #ffd250);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*************
@@ -76,7 +108,6 @@ nav {
   padding: 5px 0;
 }
 
-
 .img-header {
   padding-top: 40px;
   display: flex;
@@ -95,6 +126,9 @@ nav {
   text-align: justify;
 }
 
+.moon-block {
+  width: 900px;
+}
 
 /****************
 *** PORTFOLIO ***
@@ -110,7 +144,6 @@ nav {
   background: url(bg1.png);
   background-size: cover;
 }
-
 
 /* Typography */
 /**************************/
@@ -187,7 +220,6 @@ h3 {
 
 /* Section - Block */
 /**************************/
-
 
 .overlay-mask {
   position: absolute;
@@ -300,7 +332,7 @@ h3 {
 .card {
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15) !important;
   border: 3px #00bcdd solid;
-  border-image: linear-gradient(135deg, #6A1B9A 0%, #AA00FF 100%);
+  border-image: linear-gradient(135deg, #6a1b9a 0%, #aa00ff 100%);
   border-image-slice: 1 1 1 1;
 }
 
@@ -316,8 +348,6 @@ h3 {
   nav {
     height: 70px;
   }
-
- 
 
   .smaller-lg {
     font-size: 1.75rem;
