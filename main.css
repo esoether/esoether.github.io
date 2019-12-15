@@ -5,25 +5,23 @@ body {
 h1,
 h2,
 h3 {
+  font-family: 'Cookie', cursive;
+  letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-family: 'Cookie', cursive;
+}
+
+
+
+.section-header {
+  padding: 40px 0 20px;
 }
 
 .smaller-lg {
   font-size: 2.5rem;
-}
-
-.witch-img {
-  max-width: 120%;
-  max-height: 500px;
-  padding: 5vh 0;
-}
-
-@media screen and (max-width: 767px) {
-  .witch-img {
-    width: 90%;
-    max-width: 400px;
-    padding: 30px 0 0;
-  }
 }
 
 /********************
@@ -35,19 +33,20 @@ h3 {
   cursor: pointer;
   letter-spacing: 0.075em;
   padding: 0.8em 1em;
+  font-weight: 600;
   text-transform: uppercase;
   border: 3px #00bcdd solid;
-  border-image: linear-gradient(45deg, #000000 0%, #ff9800 100%);
+  border-image: linear-gradient(45deg, #6A1B9A 0%, #AA00FF 100%);
   border-image-slice: 1 1 1 1;
-  box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
+  box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
 }
 
 .border-button:hover {
   text-decoration: none;
   color: #000;
-  font-weight: 600;
-  border-image: linear-gradient(45deg, #ff9800 0%, #000000 100%);
+  border-image: linear-gradient(45deg, #AA00FF 0%, #6A1B9A 100%);
   border-image-slice: 1 1 1 1;
+  box-shadow: -0.3em 0.3em 5px rgba(16, 24, 50, 0.3);
 }
 
 /*************
@@ -77,93 +76,25 @@ nav {
   padding: 5px 0;
 }
 
-/*******************
-*** VIDEO HEADER ***
-*******************/
-#video-text {
-  font-size: 4rem;
-  letter-spacing: 8px;
+
+.img-header {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.video-effect {
-  height: 75vh;
-  position: relative;
-  background-color: black;
-  overflow: hidden;
+.header-img {
+  align-self: center;
 }
 
-.video-effect .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  opacity: 0.4;
-  z-index: 1;
+.block {
+  background: white;
+  padding: 30px 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
 }
 
-.video-effect video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.video-effect .container {
-  position: relative;
-  z-index: 2;
-}
-
-/******************
-*** SNAG N HOOK ***
-******************/
-.snag,
-.hook {
-  padding: 0 50px;
-}
-
-@media screen and (min-width: 767px) {
-  .snag,
-  .hook {
-    padding: 0 10px 0 50px;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .snag,
-  .hook {
-    padding-right: 75px;
-  }
-}
-
-@media screen and (min-width: 1300px) {
-  .snag,
-  .hook {
-    padding-right: 200px;
-  }
-}
 
 /****************
 *** PORTFOLIO ***
@@ -180,20 +111,16 @@ nav {
   background-size: cover;
 }
 
-/********************
-*** PARALLAX PICS ***
-********************/
 
 /* Typography */
 /**************************/
 
 h2 {
   font-size: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 2px;
   text-align: center;
-  color: white;
   font-weight: 400;
-  text-transform: uppercase;
+  text-transform: capitalize;
   z-index: 10;
   opacity: 0.9;
 }
@@ -260,17 +187,8 @@ h3 {
 
 /* Section - Block */
 /**************************/
-#parallax-world-of-ugg .block {
-  background: white;
-  padding: 60px;
-  width: 820px;
-  margin: 0 auto;
-  text-align: justify;
-}
-#parallax-world-of-ugg .block-gray {
-  background: #f2f2f2;
-  padding: 60px;
-}
+
+
 .overlay-mask {
   position: absolute;
   top: 0;
@@ -328,10 +246,12 @@ h3 {
 
 /* Extras */
 /**************************/
-#parallax-world-of-ugg .line-break {
-  border-bottom: 1px solid black;
+.line-break {
+  border-bottom: 3px solid #4b9a1b;
+  border-image: linear-gradient(45deg, #3c7a16 0%, #65ce24 100%);
+  border-image-slice: 1 1 1 1;
   width: 150px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 /* Media Queries */
@@ -340,34 +260,24 @@ h3 {
   .nav-item {
     margin-right: 50px;
   }
-
-  .nav-item:first-child {
-    margin-left: 10px;
-  }
-
-  .nav-item:last-child {
-    margin-right: 10px;
-  }
 }
 
 @media screen and (max-width: 959px) and (min-width: 768px) {
-  #parallax-world-of-ugg .block {
+  .block {
     padding: 40px;
     width: 620px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  #parallax-world-of-ugg .block {
+  .block {
     padding: 30px;
     width: 420px;
   }
   #parallax-world-of-ugg h2 {
     font-size: 30px;
   }
-  #parallax-world-of-ugg .block {
-    padding: 30px;
-  }
+
   #parallax-world-of-ugg .parallax-one,
   #parallax-world-of-ugg .parallax-two,
   #parallax-world-of-ugg .parallax-three {
@@ -375,8 +285,9 @@ h3 {
     padding-bottom: 75px;
   }
 }
+
 @media screen and (max-width: 479px) {
-  #parallax-world-of-ugg .block {
+  .block {
     padding: 30px 15px;
     width: 290px;
   }
@@ -389,8 +300,12 @@ h3 {
 .card {
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15) !important;
   border: 3px #00bcdd solid;
-  border-image: linear-gradient(135deg, #ff9800 0%, #000000 100%);
+  border-image: linear-gradient(135deg, #6A1B9A 0%, #AA00FF 100%);
   border-image-slice: 1 1 1 1;
+}
+
+.card:hover {
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.35) !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -402,9 +317,7 @@ h3 {
     height: 70px;
   }
 
-  .video-effect {
-    height: 60vh;
-  }
+ 
 
   .smaller-lg {
     font-size: 1.75rem;

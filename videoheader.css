@@ -1,0 +1,87 @@
+/*******************
+*** VIDEO HEADER ***
+*******************/
+#video-text {
+  font-size: 4rem;
+  letter-spacing: 8px;
+}
+
+.video-effect {
+  height: 75vh;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+}
+
+.video-effect .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.video-effect video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-effect .container {
+  position: relative;
+  z-index: 2;
+}
+
+/******************
+*** SNAG N HOOK ***
+******************/
+.snag,
+.hook {
+  padding: 0 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .snag,
+  .hook {
+    padding: 0 10px 0 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .snag,
+  .hook {
+    padding-right: 75px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .snag,
+  .hook {
+    padding-right: 200px;
+  }
+}
