@@ -33,12 +33,27 @@ nav {
   font-size: 2.5rem;
 }
 
+@keyframes float {
+	0% {
+    box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 15px 15px 0px rgba(0,0,0,0.4);
+		transform: translatey(-8px);
+	}
+	100% {
+		box-shadow: 0 5px 10px 0px rgba(0,0,0,0.3);
+		transform: translatey(0px);
+	}
+}
+
 /********************
 *** BORDER BUTTON ***
 ********************/
 .border-button {
-  background-color: #fff;
-  color: #101832;
+  background-color: #3E4043;
+  color: #ffd250;
   cursor: pointer;
   letter-spacing: 0.075em;
   padding: 0.8em 1em;
@@ -47,16 +62,16 @@ nav {
   border: 2px #00bcdd solid;
   border-image: linear-gradient(45deg, #aa00ff 0%, #6a1b9a 100%);
   border-image-slice: 1 1 1 1;
-  box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .border-button:hover {
   text-decoration: none;
-  color: #000;
+  color: #82b462;
   border: 2px #00bcdd solid;
-  border-image: linear-gradient(45deg, #6a1b9a 0%, #aa00ff 100%);
+  border-image: linear-gradient(45deg, #ffd250 0%, #feaa20 100%);
   border-image-slice: 1 1 1 1;
-  box-shadow: -0.3em 0.3em 5px rgba(16, 24, 50, 0.3);
 }
 
 .border-button-2 {
@@ -74,9 +89,17 @@ nav {
 }
 
 .yellow {
+  color: #3c7a16;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#65ce24, #3c7a16);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow:hover {
   color: #feaa20;
   font-weight: 600;
-  background: -webkit-linear-gradient(#feaa20, #ffd250);
+  background: -webkit-linear-gradient(#ffd250, #feaa20);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
