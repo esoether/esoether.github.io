@@ -85,7 +85,7 @@ h3 {
 *** NAVIGATION ***
 *****************/
 nav {
-  border-image: linear-gradient(45deg, #6a1b9a 0%, #aa00ff 100%);
+  border-image: linear-gradient(45deg, #ffd250 0%, #feaa20 100%);
   background: white;
   border-image-slice: 1 1 1 1;
   box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
