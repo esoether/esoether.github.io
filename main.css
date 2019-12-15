@@ -53,24 +53,25 @@ nav {
 ********************/
 .border-button {
   background-color: #3E4043;
-  color: #ffd250;
+  color: rgb(90, 199, 112);
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #ffd250 0%, #feaa20 100%);
+  border-image-slice: 1 1 1 1;
   cursor: pointer;
   letter-spacing: 0.075em;
   padding: 0.8em 1em;
   font-weight: 600;
   text-transform: uppercase;
-  border: 2px #00bcdd solid;
-  border-image: linear-gradient(45deg, #aa00ff 0%, #6a1b9a 100%);
-  border-image-slice: 1 1 1 1;
+
   animation: float 5s ease-in-out infinite;
   box-shadow: 0 5px 10px 0px rgba(0,0,0,0.2);
 }
 
 .border-button:hover {
   text-decoration: none;
-  color: #82b462;
+  color: #ffd250;
   border: 2px #00bcdd solid;
-  border-image: linear-gradient(45deg, #ffd250 0%, #feaa20 100%);
+  border-image: linear-gradient(45deg, #aa00ff 0%, #6a1b9a 100%);
   border-image-slice: 1 1 1 1;
 }
 
