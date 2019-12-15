@@ -91,6 +91,14 @@ nav {
   box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
 }
 
+.nav-item a {
+  color: rgb(116, 0, 222, 0.6)!important;
+}
+
+.nav-item a:hover {
+  color: rgb(116, 0, 222)!important;
+}
+
 .navbar-brand {
   font-family: "Cookie", cursive;
 }
