@@ -1,0 +1,58 @@
+.img-header {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-img {
+  align-self: center;
+}
+
+label, input, textarea {
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  margin-top: 20px;
+}
+
+input, textarea {
+  margin-top: 8px;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+.block {
+  padding: 30px 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block {
+    padding: 30px;
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
