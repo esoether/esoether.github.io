@@ -140,6 +140,19 @@
                   required="true"
                 ></textarea>
               </label>
+              <!--SEO-->
+              <label for="seo">
+                <span
+                  >What words or phrases would someone search to find your
+                  business:
+
+                  <br />
+                  <span class="small"
+                    >(Enter as many as you’d like, but try to list them in order
+                    of importance)</span
+                  ></span
+                ><input type="text" name="seo" required="false" />
+              </label>
               <!--Services-->
               <label for="services">
                 <span>What services and/or products do you offer:</span
@@ -175,37 +188,46 @@
                   ></span
                 ><input type="text" name="bignos" required="false" />
               </label>
-              <!--SEO-->
-              <label for="seo">
-                <span
-                  >What words or phrases would someone search to find your
-                  business:
-
-                  <br />
-                  <span class="small"
-                    >(Enter as many as you’d like, but try to list them in order
-                    of importance)</span
-                  ></span
-                ><input type="text" name="seo" required="false" />
-              </label>
+              <!--About-->
+              <label for="about">
+                  <span>Do you have an "About Me" or "About Us" or Biography we should incorporate:</span
+                  ><textarea
+                    class="w-100 small"
+                    name="about"
+                    onkeyup="adjust_textarea(this)"
+                    required="false"
+                  ></textarea>
+                </label>
 
               <!--Goal Selector-->
               <label for="goal-select"
-                >What is the main goal of your new website:<br>
+                >What is the main goal of your new website:<br />
 
                 <select name="goals" id="goal-select">
                   <option value="">--Please choose an option--</option>
-                  <option value="presence">Establish a Web presence for my business</option>
-                  <option value="leads">Generate leads and requests for services</option>
-                  <option value="portfolio">Showcase an online portfolio of my work</option>
+                  <option value="presence"
+                    >Establish a Web presence for my business</option
+                  >
+                  <option value="leads"
+                    >Generate leads and requests for services</option
+                  >
+                  <option value="portfolio"
+                    >Showcase an online portfolio of my work</option
+                  >
                   <option value="blog">Educational/Blog</option>
-                  <option value="events">Inform clients of upcoming events</option>
+                  <option value="events"
+                    >Inform clients of upcoming events</option
+                  >
                   <option value="other">Other...</option>
                 </select>
               </label>
-              
+
               <label>
-                <input class="border-button" type="submit" value="Submit Form" />
+                <input
+                  class="border-button"
+                  type="submit"
+                  value="Submit Form"
+                />
               </label>
             </form>
           </div>
