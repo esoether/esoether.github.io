@@ -70,13 +70,12 @@
       ----------------->
       <section>
         <div class="m-0">
-          <div class="line-break mb-2"></div>
-          <div class="block text-center">
+          <div class="line-break my-2"></div>
+          <div class="block text-center pt-4">
             <form
-              class="form-style-4"
-              enctype="multipart/form-data"
               action="https://formspree.io/myyzrqwg"
               method="POST"
+              enctype="multipart/form-data"
             >
               <!--Client Name-->
               <label for="name">
@@ -102,15 +101,12 @@
               </label>
               <!--Business Logo-->
               <label for="logo">
-                <span
-                  >If you have a logo you would like to use, upload it
-                  below:</span
-                >
+                <span>Do you have a logo you would like to use:</span>
                 <input
-                  style="width: 100px"
-                  type="file"
+                  type="text"
                   name="logo"
-                  accept="image/png, image/jpeg"
+                  required="false"
+                  placeholder=" Drop us a link!"
                 />
               </label>
               <!--Preferred Colors-->
@@ -156,18 +152,60 @@
                 ></textarea>
               </label>
               <!--Pricing-->
-              <label for="services">
-                <span>What services and/or products do you offer:</span
+              <label for="pricing">
+                <span>Do you want to display pricing on your website:</span
                 ><textarea
                   class="w-100 small"
-                  placeholder="(Are these physical products, online services, or a mixture of both? Are there any you would like to emphasize? Do you run any specials you would like us to highlight?)"
-                  name="services"
+                  placeholder="(If so, please enter the prices you would like to display here.)"
+                  name="pricing"
                   onkeyup="adjust_textarea(this)"
                   required="true"
                 ></textarea>
               </label>
+              <!--Big NOs-->
+              <label for="bignos">
+                <span
+                  >What do you NOT want on your site in terms of content?
+
+                  <br />
+                  <span class="small"
+                    >(Your name, your prices, your phone number, photos of you,
+                    your location, certain imagery or phrases, specific colors,
+                    etc)</span
+                  ></span
+                ><input type="text" name="bignos" required="false" />
+              </label>
+              <!--SEO-->
+              <label for="seo">
+                <span
+                  >What words or phrases would someone search to find your
+                  business:
+
+                  <br />
+                  <span class="small"
+                    >(Enter as many as you’d like, but try to list them in order
+                    of importance)</span
+                  ></span
+                ><input type="text" name="seo" required="false" />
+              </label>
+
+              <!--Goal Selector-->
+              <label for="goal-select"
+                >What is the main goal of your new website:<br>
+
+                <select name="goals" id="goal-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="presence">Establish a Web presence for my business</option>
+                  <option value="leads">Generate leads and requests for services</option>
+                  <option value="portfolio">Showcase an online portfolio of my work</option>
+                  <option value="blog">Educational/Blog</option>
+                  <option value="events">Inform clients of upcoming events</option>
+                  <option value="other">Other...</option>
+                </select>
+              </label>
+              
               <label>
-                <input type="submit" value="Submit Inquiry" />
+                <input class="border-button" type="submit" value="Submit Inquiry" />
               </label>
             </form>
           </div>

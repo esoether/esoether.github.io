@@ -8,17 +8,29 @@
   align-self: center;
 }
 
+.line-break {
+  border-bottom: 3px solid #4b9a1b;
+  border-image: linear-gradient(45deg, #3c7a16 0%, #65ce24 100%);
+  border-image-slice: 1 1 1 1;
+  width: 150px;
+  margin: 20px auto;
+}
+
 label, input, textarea {
   display: block;
   margin: 0 auto;
 }
 
 label {
+  color: #3c7a16;
   margin-top: 20px;
 }
 
-input, textarea {
+input, textarea, select {
   margin-top: 8px;
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #ffd250 0%, #ffd250 100%);
+  border-image-slice: 1 1 1 1;
 }
 
 textarea {
@@ -55,4 +67,37 @@ label:first-child {
     padding: 30px 15px;
     width: 290px;
   }
+  #goal-select {
+    margin-left: -30px;
+  }
+}
+
+/*********************
+*** BORDER BUTTONS ***
+*********************/
+.border-button {
+  margin: 40px auto;
+  background-color: white;
+  color: #3c7a16;
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, #65ce24 0%, #3c7a16 100%);
+  border-image-slice: 1 1 1 1;
+  cursor: pointer;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.border-button:hover {
+  text-decoration: none;
+  animation-play-state: paused;
+  color: #e7bf44;
+
+  color: rgb(113, 0, 141);
+  border: 2px #00bcdd solid;
+  border-image: linear-gradient(45deg, rgb(116, 0, 222) 0%, rgb(116, 0, 222, 0.6) 100%);
+  border-image-slice: 1 1 1 1;
 }
