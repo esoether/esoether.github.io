@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Esoether | Heart-Powered Websites</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ed4b5e3ec3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap core JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="form.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <script id="mcjs">
+      !(function(c, h, i, m, p) {
+        (m = c.createElement(h)),
+          (p = c.getElementsByTagName(h)[0]),
+          (m.async = 1),
+          (m.src = i),
+          p.parentNode.insertBefore(m, p);
+      })(
+        document,
+        "script",
+        "https://chimpstatic.com/mcjs-connected/js/users/c9a59435f485966734a546679/9c1c166a3d70939a3e290b611.js"
+      );
+    </script>
+  </head>
+  <body>
+    <!----------
+    -- HEADER --
+    ----------->
+    <header class="img-header">
+      <!--OVERLAY-->
+      <div class="header-img">
+        <img src="logo2.png" style="max-width: 350px;" />
+      </div>
+    </header>
+
+    <main>
+      <!----------------
+      -- HERO SECTION --
+      ----------------->
+      <section>
+        <div class="m-0 mt-4 pt-1">
+          <div class="line-break my-2"></div>
+          <div class="block text-center pt-4">
+            <form
+              action="https://formspree.io/myyzrqwg"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <!--Client Name-->
+              <label for="name">
+                <span>Enter Your Name:</span
+                ><input type="text" name="full_name" required="true" />
+              </label>
+              <!--Client Email-->
+              <label for="email">
+                <span>Email Address:</span
+                ><input type="email" name="_replyto" required="true" />
+              </label>
+              <!--Business Name-->
+              <label for="business">
+                <span>The Name of Your Business:</span
+                ><input type="text" name="business_name" required="true" />
+              </label>
+              <!--Business Slogan-->
+              <label for="slogan">
+                <span
+                  >Your Slogan/Tagline:<br />
+                  <span class="small">(if you have one)</span></span
+                ><input type="text" name="slogan" required="false" />
+              </label>
+              <!--Business Logo-->
+              <label for="logo">
+                <span>Do you have a logo you would like to use:</span>
+                <input
+                  type="text"
+                  name="logo"
+                  required="false"
+                  placeholder=" Drop us a link!"
+                />
+              </label>
+              <!--Preferred Colors-->
+              <label for="colors">
+                <span
+                  >Your preferred brand colors:<br />
+                  <span class="small"
+                    >(Please note below if you would like us to use your logo's
+                    colors)</span
+                  ></span
+                ><input type="text" name="colors" required="true" />
+              </label>
+              <!--Three Adjectives-->
+              <label for="adjectives">
+                <span
+                  >Write three words to describe your brand’s aesthetic or
+                  personality:<br
+                /></span>
+                <input type="text" name="adjective1" required="false" />
+                <input type="text" name="adjective2" required="false" />
+                <input type="text" name="adjective3" required="false" />
+              </label>
+              <!--Mission Statement-->
+              <label for="mission">
+                <span>What is your business mission statement?</span
+                ><textarea
+                  class="w-100 small"
+                  placeholder="(Think of this mission statement as the soul of your brand.)"
+                  name="mission"
+                  onkeyup="adjust_textarea(this)"
+                  required="true"
+                ></textarea>
+              </label>
+              <!--Services-->
+              <label for="services">
+                <span>What services and/or products do you offer:</span
+                ><textarea
+                  class="w-100 small"
+                  placeholder="(Are these physical products, online services, or a mixture of both? Are there any you would like to emphasize? Do you run any specials you would like us to highlight?)"
+                  name="services"
+                  onkeyup="adjust_textarea(this)"
+                  required="true"
+                ></textarea>
+              </label>
+              <!--Pricing-->
+              <label for="pricing">
+                <span>Do you want to display pricing on your website:</span
+                ><textarea
+                  class="w-100 small"
+                  placeholder="(If so, please enter the prices you would like to display here.)"
+                  name="pricing"
+                  onkeyup="adjust_textarea(this)"
+                  required="true"
+                ></textarea>
+              </label>
+              <!--Big NOs-->
+              <label for="bignos">
+                <span
+                  >What do you NOT want on your site in terms of content?
+
+                  <br />
+                  <span class="small"
+                    >(Your name, your prices, your phone number, photos of you,
+                    your location, certain imagery or phrases, specific colors,
+                    etc)</span
+                  ></span
+                ><input type="text" name="bignos" required="false" />
+              </label>
+              <!--SEO-->
+              <label for="seo">
+                <span
+                  >What words or phrases would someone search to find your
+                  business:
+
+                  <br />
+                  <span class="small"
+                    >(Enter as many as you’d like, but try to list them in order
+                    of importance)</span
+                  ></span
+                ><input type="text" name="seo" required="false" />
+              </label>
+
+              <!--Goal Selector-->
+              <label for="goal-select"
+                >What is the main goal of your new website:<br>
+
+                <select name="goals" id="goal-select">
+                  <option value="">--Please choose an option--</option>
+                  <option value="presence">Establish a Web presence for my business</option>
+                  <option value="leads">Generate leads and requests for services</option>
+                  <option value="portfolio">Showcase an online portfolio of my work</option>
+                  <option value="blog">Educational/Blog</option>
+                  <option value="events">Inform clients of upcoming events</option>
+                  <option value="other">Other...</option>
+                </select>
+              </label>
+              
+              <label>
+                <input class="border-button" type="submit" value="Submit Form" />
+              </label>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer></footer>
+</html>
