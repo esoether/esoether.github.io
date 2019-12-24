@@ -105,6 +105,8 @@ nav {
 }
 
 .navbar-brand {
+  color: rgba(255, 255, 255, 0.6)!important;
+  letter-spacing: 1px;
   font-family: "Cookie", cursive;
 }
 
@@ -115,10 +117,6 @@ nav {
 .navbar-toggler {
   margin-top: 6px;
   border: none;
-}
-
-.navbar-brand {
-  letter-spacing: 1px;
 }
 
 #navbarToggle {
@@ -237,7 +235,8 @@ nav {
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
-    font-size: 25px;
+    letter-spacing: 3px;
+    font-size: 30px;
   }
 
   #navbarToggle {
