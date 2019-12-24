@@ -90,17 +90,18 @@ h3 {
 *****************/
 nav {
   border-image: linear-gradient(45deg, #ffd250 0%, #feaa20 100%);
-  background: white;
+  background: #2F2F2F;
   border-image-slice: 1 1 1 1;
   box-shadow: -0.2em 0.2em 5px rgba(16, 24, 50, 0.1);
 }
 
 .nav-item a {
-  color: rgb(116, 0, 222, 0.6)!important;
+  color: #FFE680!important;
+  letter-spacing: 1px;
 }
 
 .nav-item a:hover {
-  color: rgb(116, 0, 222)!important;
+  color: #9C6AE7!important;
 }
 
 .navbar-brand {
@@ -122,7 +123,7 @@ nav {
 
 #navbarToggle {
   padding: 20px 0px;
-  background-color: white;
+  background: #2F2F2F;
 }
 
 #navbarToggle ul li {
