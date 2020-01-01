@@ -2,6 +2,10 @@
   color: rgb(116, 0, 222)!important;
 }
 
+.bg-dark {
+  background: #2F2F2F!important;
+}
+
 body {
   font-family: "Oswald", sans-serif;
 }
@@ -189,6 +193,10 @@ nav {
   width: 900px;
 }
 
+.header-img img {
+  max-width: 350px;
+}
+
 /* Media Queries */
 /**************************/
 @media screen and (min-width: 768px) {
@@ -209,6 +217,10 @@ nav {
     padding: 30px;
     width: 420px;
   }
+
+  .header-img img {
+    max-width: 250px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -216,6 +228,11 @@ nav {
     padding: 30px 15px;
     width: 290px;
   }
+
+  .header-img img {
+    max-width: 200px;
+  }
+  
 }
 
 /********************
