@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Raven</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ed4b5e3ec3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap core JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="raven.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!----------
+    -- HEADER --
+    ----------->
+    <header class="img-header">
+      <!--OVERLAY-->
+      <div class="header-img">
+        <h2 class="display-4">Raven</h2>
+      </div>
+    </header>
+
+    <main>
+      <!----------------
+      -- HERO SECTION --
+      ----------------->
+      <section>
+        <div class="m-0">
+          <div class="line-break mb-2"></div>
+
+          <div class="block text-center">
+            <img id="myImg" class="img-fluid mb-4" src="raven.png" />
+            <p>
+              Welcome to your chart! You can click the image to enlarge it. Find
+              a brief description of your <em>Big Three</em> placements below.
+              Scroll down a little more for some important events of 2020 and
+              what areas you should expect to see change.
+            </p>
+            <p class="small">
+              <em
+                >Please take this interpretation with a grain of salt as I
+                cannot see the future and everyone will have their own personal
+                interpretation of the planets.</em
+              ><strong>Your fate is forever in your hands. </strong>😊
+            </p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+              };
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              };
+            </script>
+          </div>
+
+          <!-- <div class="line-break mt-3"></div> -->
+        </div>
+
+        <div class="container-fluid my-lg-4">
+          <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+              <div
+                class="panel-heading d-flex flex-column flex-sm-row justify-content-center justify-content-sm-end"
+              >
+                <ul class="nav nav-tabs">
+                  <li>
+                    <a href="#sun" class="active" data-toggle="tab"
+                      >Sun in Capricorn</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tab2primary" data-toggle="tab">
+                      Moon in Virgo
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab3primary" data-toggle="tab"
+                      >Capricorn Rising</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="sun">
+                    <hr class="d-none d-md-block" />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="sun.png"
+                        alt="sun"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          The Sun provides us with our central vital source of
+                          energy. It represents the conscious self-hood of the
+                          individual psyche – the power to do and to be. It
+                          functions as the cloak our soul has chosen to
+                          creatively actualize its purpose, and the heart and
+                          core of beingness. This urge represented by the Sun is
+                          the desire for full self-expression, for manifesting
+                          personal power and talent in ways that inspire others
+                          to express their creatively. This is sometimes
+                          referred to as our yang energy, and it is
+                          traditionally where we shine.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <p>
+                      Ruled by restrictive Saturn, Capricorn energy chisels its
+                      paternal signature into the foundation of each building it
+                      constructs. It strives for a personal standard of
+                      excellence and grinds away with its eyes focused on the
+                      long-game, knowing that hard work is non-negotiable under
+                      the inescapable law of cause and effect. The mature
+                      authoritarian writes the unyielding laws of time and space
+                      itself, declaring the security in boundaries and growing
+                      convinced that only wilderness lies beyond its walls — but
+                      a heart guarded can be as lonely as a heart destroyed.
+                    </p>
+                    <p>
+                      <strong>The Sun</strong> in Capricorn can feel
+                      subconsciously restricted no matter the effort it puts in.
+                      The overwhelming reponsibility the outside world demands
+                      is a heavy weight to bear – a crushing weight that screams
+                      its will never be perfect or solid enough for the
+                      recognition and stability it seeks. Yet when provided with
+                      the comfort of being alone and out of the spotlight, the
+                      Sun in Capricorn is practical, responsible, and focused
+                      enough to forge the path up any mountain it has resolved
+                      to climb.
+                    </p>
+                    <p>
+                      Eternal winter at its core, the world can often seem cold
+                      and uniquely unforgiving, but a Capricorn Sun is a quiet
+                      stone fortress in the midst of a snowstorm – its
+                      indestructible walls a buffer against the cruelest of
+                      blizzards.
+                    </p>
+                    <p>
+                      <strong
+                        >Capricorn Suns are bestowed upon souls who have chosen
+                        to explore the right:</strong
+                      >
+                    </p>
+                    <ul>
+                      <li>To authority</li>
+                      <li>To govern and control others to establish order</li>
+                      <li>
+                        To be respected for achievements and position
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="tab2primary">
+                    <hr class="d-none d-md-block" />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="moon2.jpg"
+                        alt="moon"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          The Moon acts as a reflector of our true selves (Sun)
+                          and explains how we experience ourselves on a less
+                          conscious level. Typically the governing influence
+                          during childhood, the Moon manifests as emotions,
+                          instincts, intuition, self-care, and self-discovery.
+                          The Moon is what we need for emotional satisfaction
+                          and also the process through which we may separate
+                          ourselves emotionally from other people, where issues
+                          of personal insecurity may arise to be purified. This
+                          is sometimes referred to as our yin energy.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <h3 class="mt-4">Unconscious Expression</h3>
+                    <p>
+                      Following the urge to appear perfect in the eyes of others
+                      the Virgo Moon uses analytical powers to defend its
+                      behavior when others question it. When others do not
+                      behave according to the Moon in Virgo's expectations, it
+                      may feel affronted and react with sarcasm or cold silence.
+                      Indulging in a fear of criticism can lead to withholding
+                      its helpful opinions and valuable perceptions.
+                    </p>
+                    <p>
+                      Often Virgo Moon may refuse to share its internal
+                      reactions with a loved one and unwittingly create a secret
+                      barrier. As a result, the moon sacrifices integrity in
+                      order to be accepted, at least momentarily. This leads to
+                      feeling guilty and not knowing why. Relating superficially
+                      deprives others of the value of the Moon in Virgo's astute
+                      perceptions and deprives it of the opportunity to feel
+                      useful. In violating its own code, it undergoes severe
+                      self-criticism, which in turn takes away the very security
+                      it needs.
+                    </p>
+                    <h3 class="mt-4">Conscious Expression</h3>
+                    <p>
+                      At its highest manifestion, Virgo Moon can communicate its
+                      high standards in a way that confirms its own goodness and
+                      perfection. When it lets go of its expectations of what
+                      perfect behavior ought to look like (its own or the other
+                      person's), the Moon in Virgo rids itself of ideas that
+                      prevent closeness.
+                    </p>
+                    <p>
+                      As Virgo Moon empties its mind of the judgements that
+                      cause separation, it experiences the joy and closeness in
+                      communication it wants. It can do this by casting aside
+                      the need to have others think of it as perfect. This frees
+                      it to have faith in your intuition. Then the Moon in Virgo
+                      can tell what, for itself, is the truth expressed as its
+                      own point of view.
+                    </p>
+                    <h3 class="mt-4">Past Lives</h3>
+                    <p>
+                      Past lives spent in positions of ministering to others,
+                      healing them, taking care of their needs, and helping to
+                      put them back together have resulted in a gentle humility
+                      and the desire to serve. From lifetimes spent as artisans,
+                      craftspeople, and physical healers, the Moon in Virgo has
+                      concerned with the details of perfection in its work.
+                      Thus, in this life a Virgo Moon has a tendency to feel
+                      that all aspects of its behavior and performance must be
+                      perfect before they can be allowed expression. This
+                      attitude can interfere with the flow of charitable deeds
+                      into the world.
+                    </p>
+                    <p>
+                      As a Virgo Moon, you are learning to express whatever
+                      helpful detail you have at the moment, without having to
+                      see the whole picture. When your piece of the puzzle has
+                      been added, the larger vision becomes clearer for all
+                      concerned. Then others can cooperate more easily with you
+                      in attaining mutually beneficial results.
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab3primary">
+                    <hr />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="ac.png"
+                        alt="ac"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          Also called the Ascendant (AC) for the sign that was
+                          rising on the Eastern horizon specific to the time and
+                          location of birth. Abstractly, these are soul desires
+                          on a subjective level which operate as the window or
+                          lens through which we see the world and the
+                          instinctive mask we present as to the outside. It is
+                          the filter through which everything we are internally
+                          is projected into the external world and through which
+                          everything in our outer environment is personally
+                          interpreted by us. This is the lens through which we
+                          filter our perspective on life and also how others
+                          first see us or respond to us – how we begin/start
+                          things. The AC also represents the legacy available to
+                          us and the innate qualities that have been the most
+                          fully developed and mastered through numerous past
+                          life experiences – our inherited gifts.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="d-md-flex">
+                      <div class="mr-md-4">
+                        <p><strong>Step into the role of:</strong></p>
+                        <ul>
+                          <li><em>The Achiever</em></li>
+                        </ul>
+                      </div>
+                      <div class="ml-md-4">
+                        <p><strong>Hold the intention of:</strong></p>
+                        <ul>
+                          <li>
+                            <em>"How can I help you reach your goals?"</em>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p>
+                      With your window to the world (Ascendant/Rising) in
+                      Capricorn, you interact with the external world in terms
+                      of the things you want to accomplish and your belief that
+                      respect and protocol need to be upheld in order for you to
+                      maintain your sense of status and self-respect. You
+                      express your inner being through your approach of quiet
+                      integrity, common sense, and willingness to take
+                      responsibility.
+                    </p>
+                    <p>
+                      When looking outside yourself, you see the people and
+                      situations around you in terms of whether or not you
+                      respect their character and behavior, and offer you an
+                      opportunity to advance toward your goals. You
+                      <em>interpret</em> the behavior of others toward you in
+                      terms of whether the person is showing appropriate respect
+                      for you.
+                    </p>
+                    <p>
+                      You expres your personality and attitude in ways that you
+                      feel demonstrate prestige and authority. Your behavior and
+                      demeanor show that you are respectful towards others, and
+                      that you expect them to show you respect in return.
+                    </p>
+                    <h3 class="mt-4">Your Achilles' Heel</h3>
+                    <p>
+                      You approach life from a position of wanting to achieve
+                      results in the external world, and you have an innate
+                      executive ability to organize and direct other people, and
+                      yourself, in ways that allow goals to be achieved. This
+                      can result in you seeing those who don't share this
+                      primary value as too emotional or weak. Because you
+                      sometimes think <em>others</em> are this way, it's easy
+                      for you to assume that they could possibly view
+                      <em>you</em> this way as well – and it is your fear of
+                      this potential disapproval that creates your Achilles'
+                      heel.
+                    </p>
+                    <h3 class="mt-4">Self-Actualization</h3>
+                    <p>
+                      You have special inborn abilities to achieve results in
+                      the external world through your awareness of the structure
+                      that is required in order to attain personal status and
+                      prestige. Using these gifts increases your self-confidence
+                      socially and opens the way to you experiencing ongoing
+                      vitality in your life. Although it can be difficult to get
+                      past your fear of how other people will see you and the
+                      potential of their disapproval, the highest path is to be
+                      courageous enough to overcome this obstacle and fully
+                      express your true nature by allowing your willingness to
+                      take personal responsibility for creating success to
+                      inspire others to do the same.
+                    </p>
+                    <p>
+                      Then your greatest challenge becomes using the positive
+                      <em>and</em> negative feedback from your environment to
+                      shift and fine-tune the ways in which you express your
+                      gifts and cultivate your ability to consistently create
+                      positive results.
+                    </p>
+                    <p>
+                      When you actively use your natural gifts for establishing
+                      authority and organizing on a level that appeals to the
+                      public, then you will experience yourself as a powerful
+                      cause in your own life rather than living in fear of
+                      others' perceptions.
+                    </p>
+                    <h3 class="mt-4">Past-Life Gifts</h3>
+                    <p>
+                      In many past lifetimes, your survival has depended on your
+                      status, prestige, unquestionable integrity, and ability to
+                      make sensible decisions. Many of these past incarnations
+                      were spent in situations where you were in charge of
+                      others as a political, business, or social leader. As a
+                      result, you are innately aware of the importance of
+                      reputation and taking responsibility for making sensible
+                      decisions that lead to successful outcomes.
+                    </p>
+                    <p>
+                      Lifetimes of having to postpone immediate pleasure in
+                      order to reach long-term goals have given you a somewhat
+                      austere, reserved, and serious demeanor, and a great sense
+                      of self-discipline. At your best, you do not begrudge your
+                      situation and instead look to see how to use current
+                      circumstances to better your position from a position of
+                      cautious pragmatism.
+                    </p>
+                    <p>
+                      During these past lives, you have mastered the art of
+                      taking charge of any situation in which you are involved,
+                      and will make the personal sacrifices that are necessary
+                      to reach your goals. Your talent for recognizing the
+                      opportunities that present themselves, and your
+                      willingness to take responsibility for using those
+                      opportunities wisely, can teach us all the value of
+                      stepping up to the plate and owning our ability to create
+                      success in our own lives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid my-lg-4">
+          <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+              <div
+                class="panel-heading d-flex flex-column flex-sm-row justify-content-center justify-content-sm-end"
+              >
+                <ul class="nav nav-tabs">
+                  <li>
+                    <a href="#jan" class="active" data-toggle="tab">January</a>
+                  </li>
+                  <li>
+                    <a href="#feb" data-toggle="tab">
+                      February
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#mar" data-toggle="tab">March</a>
+                  </li>
+                  <li>
+                    <a href="#apr" data-toggle="tab">April</a>
+                  </li>
+                  <li>
+                    <a href="#may" data-toggle="tab">May</a>
+                  </li>
+                  <li>
+                    <a href="#june" data-toggle="tab">June</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="panel-body calendar">
+                <div class="tab-content ">
+                  <div class="tab-pane active" id="jan">
+                    <p class="date">
+                      <strong>January 12th –</strong> Pluto Saturn conjunction
+                      at 22° Capricorn<br /><em>Influencing your 1st House </em>
+                    </p>
+                    <ul>
+                      <li>
+                        Conjunct (working with) your natal Neptune and Uranus
+                      </li>
+                      <li>
+                        Was in effect throughout 2019 but becomes exact on
+                        January 12th, 2020, and acts as a steady forging
+                        evolution throughout 2020
+                      </li>
+                    </ul>
+                    <p>
+                      We experience a Saturn/Pluto conjunction on average every
+                      34 years (meaning the last one was in November of 1982).
+                      With Saturn (the Lord of Time and Karma) and Pluto (the
+                      God of Power, Chaos, and Transformation) joining forces
+                      together in the rigid, surefooted signed Capricorn, the
+                      gravity can feel crushing.
+                    </p>
+                    <p>
+                      With this happening in your first house, now is when you
+                      will take control of how you assert yourself in this
+                      world. It's time to tap into your determination, ambition,
+                      methods, and habits, and recognizing what you may need to
+                      change so that you can succeed. Anything that cannot stand
+                      will crumble under this placement, and the upheaval
+                      results in a purification that detoxifies the old ways.
+                    </p>
+                    <p>
+                      What you thought were safe and secure relationships,
+                      possessions, employment or general structures and patterns
+                      in your life may dissolve away, leaving you feeling
+                      anxious and depressed. In its higher manifestation, this
+                      transit allows you to make sacrifices and do without
+                      something to do fine-tune your focus so you can achieve
+                      your goals and inspire others.
+                    </p>
+
+                    <p>
+                      <strong
+                        >Trust that nothing that was meant for you can be taken
+                        from you or destroyed.</strong
+                      >
+                    </p>
+                    <p>
+                      Because your natal Neptune is at 23° Capricorn, this
+                      restructuring and rebirth will involve how you identify
+                      yourself on a spiritual or collective level. Dramatic
+                      events and intense relationships lead to deep spiritual
+                      transformation and a rapid evolution of spiritual
+                      development. You may feel called to embark on a journey of
+                      self-discovery to find a deeper meaning in life as your
+                      hopes and dreams for the future undergo major
+                      transformations. As you emerge from this long transit, you
+                      will have earned a renewed determination and conviction to
+                      turn your new dreams into reality.<br />
+                      <em class="small"
+                        >Because Neptune moves so slowly, an entire generation
+                        will be experiencing this Neptune/Saturn/Pluto
+                        conjunction for a few years in whatever house we have
+                        Capricorn. We will all be experiencing a sense of
+                        spiritual confusion and searching for similar ways to
+                        cope – prompting a strong sense of togetherness with
+                        people our own age.</em
+                      >
+                    </p>
+
+                    <p>
+                      With your natal Uranus at 25° Capricorn involved, you may
+                      feel pressured to make a profound change, but be careful
+                      not to jump the gun by being impulsive. Remain flexible
+                      and know that you are the revolution whether internally or
+                      externally. You will likely receive creative and
+                      revolutionary "downloads" that illuminate how you can
+                      renew old structures by adapting them to the changes that
+                      are manifesting externally.
+                    </p>
+                    <p>
+                      <strong
+                        >This transit brings about deep, favorable changes that
+                        are in place to liberate you on a personal level and
+                        provide large-scale social reform on a collective level.
+                      </strong>
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="feb">
+                    <p class="date">
+                      <strong>February 17th - March 10th –</strong> Mercury Rx
+                      begins at at 13° Pisces to 28° Aquarius<br /><em
+                        >Influencing your 2nd House
+                      </em>
+                    </p>
+                    <ul>
+                      <li>Will first trine your natal Venus and North Node</li>
+                      <li>Will then conjunct your natal Saturn</li>
+                      <li>Will then oppose your natal Moon and Mars</li>
+                      <li>Will then square your natal Pluto</li>
+                    </ul>
+                    <p></p>
+                  </div>
+                  <div class="tab-pane" id="mar">
+                    <p class="date">
+                      <strong>March 10th –</strong> Mercury direct at 28°
+                      Aquarius<br /><em>Influencing your 2nd House </em>
+                    </p>
+                    <ul>
+                      <li>Square your natal Pluto</li>
+                    </ul>
+                    <p>Interpretation</p>
+                    <p class="date">
+                      <strong>March 20th –</strong> Mars Jupiter conjunction at
+                      22° Capricorn<br /><em>Influencing your 1st House </em>
+                    </p>
+                    <ul>
+                      <li>Square your natal Pluto</li>
+                    </ul>
+                    <p class="date">
+                      <strong>March 23rd –</strong> Mars Pluto conjunction at
+                      24° Capricorn<br /><em>Influencing your 1st House </em>
+                    </p>
+                    <ul>
+                      <li>Square your natal Pluto</li>
+                    </ul>
+                    <p class="date">
+                      <strong>March 31st –</strong> Mars Saturn conjunction at
+                      0° Aquarius<br /><em>Influencing your 1st House </em>
+                    </p>
+                    <ul>
+                      <li>Square your natal Pluto</li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="apr">
+                    <p class="date">
+                      <strong>April 5th –</strong> Jupiter Pluto conjunction at
+                      24° Capricorn<br /><em>Influencing your 1st House </em>
+                    </p>
+                    <ul>
+                      <li>Conjunct your natal Neptune and Uranus</li>
+                    </ul>
+                    <p>Interpretation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
