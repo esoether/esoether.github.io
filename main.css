@@ -89,6 +89,45 @@ h3 {
   border-image-slice: 1 1 1 1;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
+    transform: translatey(-8px);
+  }
+  100% {
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
+    transform: translatey(0px);
+  }
+}
+
+/**********************
+*** SERVICES BUTTON ***
+**********************/
+.services-button {
+  background-color: white;
+  color: #2f2f2f;
+  font-weight: bold;
+  border: 3px #ffd250 solid;
+  border-image: linear-gradient(45deg, #ffda6d 50%, #ffd250 100%);
+  border-image-slice: 1 1 1 1;
+  cursor: pointer;
+  letter-spacing: 0.075em;
+  padding: 0.8em 1em;
+  margin: auto auto 0;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.services-button:hover {
+  text-decoration: none;
+  background: #2f2f2f;
+  color: #f0d37d;
+}
+
 /*****************
 *** NAVIGATION ***
 *****************/
@@ -149,20 +188,16 @@ nav {
   align-self: center;
 }
 
-@keyframes float {
-  0% {
-    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(0px);
-  }
-  50% {
-    box-shadow: 0 15px 15px 0px rgba(0, 0, 0, 0.4);
-    transform: translatey(-8px);
-  }
-  100% {
-    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transform: translatey(0px);
-  }
+/********************
+*** SERVICE CARDS ***
+********************/
+#services_section .col-lg-4 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 }
+
 
 /*******************
 *** MAIN CONTENT ***
@@ -235,20 +270,7 @@ nav {
   
 }
 
-/********************
-*** SERVICE CARDS ***
-********************/
 
-.card {
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15) !important;
-  border: 3px #00bcdd solid;
-  border-image: linear-gradient(135deg, #6a1b9a 0%, #aa00ff 100%);
-  border-image-slice: 1 1 1 1;
-}
-
-.card:hover {
-  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.35) !important;
-}
 
 @media screen and (max-width: 767px) {
   .navbar-brand {
