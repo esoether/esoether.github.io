@@ -1,0 +1,351 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.text-muted {
+  color: #c8d0d8 !important;
+}
+
+nav {
+  font-family: "Aref Ruqaa", serif;
+  text-transform: uppercase;
+}
+
+footer .navbar-brand h1 {
+  font-size: 1.25rem;
+}
+
+footer .navbar-brand h2 {
+  font-size: 1rem;
+}
+
+.nav-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.nav-item a {
+  color: #004381 !important;
+}
+
+.nav-item a:hover {
+  color: rgb(10, 154, 250) !important;
+}
+
+.bg-primary {
+  background: #0384D7 !important;
+}
+
+.bg-secondary {
+  background: rgb(86, 36, 116) !important;
+}
+
+.bg-dark {
+  background: rgb(162, 121, 216) !important;
+}
+
+.bg-purple {
+  background: linear-gradient(
+      to right,
+      rgba(162, 121, 216, 0.712) 100%,
+      rgba(121, 170, 216, 0.61) 100%
+    ),
+    url(bg2.jpg);
+
+  background-size: contain;
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(rgb(197, 57, 252), rgb(255, 91, 233));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#longerIntroSection img {
+  height: 150px;
+}
+
+.rounded-img {
+  border-radius: 50%;
+}
+
+
+
+.btn-primary {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border: none;
+  box-shadow: 2px 5px 3px rgb(86, 36, 116);
+  background: #EC008C !important;
+}
+
+.btn-secondary {
+  justify-self: flex-end;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border: none;
+  box-shadow: 2px 5px 3px rgb(86, 36, 116);
+  background: #25a85e;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+  border-color: rgb(145, 80, 154);
+  background: rgb(89, 49, 129) !important;
+}
+
+.lead {
+  line-height: 1.2;
+  font-size: 2rem;
+}
+
+.jumbotron {
+  background: none;
+}
+
+#longerIntroSection h2 {
+  font-size: 1.75rem !important;
+}
+
+.intro-list li {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 30px auto;
+  align-items: center;
+}
+
+
+
+#testimonialsSection i {
+  color: #db5ac6;
+}
+
+#testimonialsSection .button i {
+  background: white;
+  padding: 8px 10px;
+  border-radius: 50%;
+  font-size: 10px;
+  margin: 0 5px;
+}
+
+
+
+@media screen and (min-width: 967px) {
+  .intro-list li {
+    flex-direction: row;
+    height: 80px;
+    margin: -20px 0;
+  }
+
+  .intro-list svg {
+    width: 50px !important;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .intro-list li:last-child svg {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .display-3 {
+    font-size: 2.75rem;
+  }
+
+  .lead {
+    font-size: 1.75rem;
+  }
+
+  #introSection h1, #testimonialsSection h1 {
+    font-size: 1.75rem !important;
+  }
+
+  #longerIntroSection h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #testimonialsSection .lead {
+    font-size: 1.25rem !important;
+  }
+
+  #longerIntroSection h2 {
+    font-size: 1rem !important;
+  }
+
+  .intro-list {
+    padding: 0px;
+    margin: 0 auto;
+  }
+
+  .intro-list svg {
+    margin-right: 10px;
+  }
+
+  .intro-list li {
+    width: auto;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  .display-3 {
+    font-size: 2rem;
+  }
+  
+  .testimonials p {
+    font-size: .8rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+  }
+
+  #introSection h1 {
+    font-size: 1.5rem !important;
+  }
+
+  #longerIntroSection svg {
+    width: 100px!important;
+  }
+
+  #longerIntroSection p {
+    font-size: 1rem!important;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .jumbotron {
+    height: 85vh;
+  }
+
+  .jumbotron .container {
+    position: absolute;
+    top: 35vh;
+    right: 0;
+    left: 0;
+  }
+
+  #topNav {
+    padding: 10px 80px !important;
+  }
+
+  #testimonialsSection .button i {
+    background: white;
+    padding: 10px 13px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+}
+
+#bottomNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo {
+  justify-self: center;
+}
+
+.logo h1 {
+  font-family: "Aref Ruqaa", serif;
+  color: #5c2297;
+}
+
+.logo h2 {
+  color: #EC008C;
+}
+
+.logo h1, .logo h2 {
+  text-transform: uppercase;
+}
+
+.navbar-brand h1 {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.navbar-brand h2 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
+}
+
+footer .logo {
+  text-align: center;
+}
+footer h1 {
+  font-size: 18px;
+}
+
+footer h2 {
+  font-size: 16px;
+}
+
+#topNav i {
+  font-size: 1.75rem;
+  color: white;
+}
+
+#topNav i:hover {
+  cursor: pointer;
+  color: #e5e5e5;
+}
+
+.jumbotron h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 3px #5c2297;
+}
+
+.jumbotron {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  /* Here's the trick */
+  background: linear-gradient(
+      to right,
+      rgba(53, 211, 148, 0.774) 10%,
+      rgba(187, 80, 187, 0.781) 50%
+    ),
+    url(mainbg.jpg)
+      center center;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#introSection h1,
+#longerIntroSection h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #2b5c89;
+}
+
+#longerIntroSection p {
+  font-size: 1.25rem;
+}
+
+#longerIntroSection svg {
+  width: 150px!important;
+}
+
+.intro-list {
+  list-style: none;
+  font-size: 1.5rem;
+  color: #599c76;
+}
+
+.linebreak {
+  border-bottom: 2px solid black;
+  width: 60vw;
+  margin: 40px auto;
+}
