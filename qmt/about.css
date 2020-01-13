@@ -5,3 +5,17 @@
 .three-columns p {
   font-size: 14px;
 }
+
+.three-columns .col-12 {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .three-columns .col-12:first-child {
+    margin-top: 0px;
+  }
+  
+  .three-columns .col-12:last-child {
+    margin-bottom: 20px;
+  }
+}
