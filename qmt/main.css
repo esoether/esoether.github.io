@@ -135,6 +135,26 @@ footer {
   background: #baa0d8;
 }
 
+footer a:nth-child(2) {
+  color: rgb(5, 97, 218);
+}
+
+footer a {
+  color: rgb(200, 255, 232);
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.testimonials_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
 @media screen and (min-width: 968px) {
   .intro-list li {
     flex-direction: row;
@@ -331,6 +351,31 @@ footer h1 {
 
 footer h2 {
   font-size: 16px;
+}
+
+.contact_container a {
+  color: rgb(103, 237, 255);
+}
+
+.contact_container i {
+  margin-right: 10px;
+}
+
+.contact_container .card {
+  padding: 20px;
+}
+
+.card input, .card textarea {
+   background: linear-gradient(
+    to right,
+    rgba(117, 67, 166, 0.726) 10%,
+    rgba(187, 80, 187, 0.781) 50%
+  );
+  color: white;
+}
+
+.card label {
+  color: rgb(46, 46, 46);
 }
 
 #topNav i {
