@@ -43,6 +43,13 @@
     <link rel="icon" type="image/x-icon" href="myfavicon.ico" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"
+    ></script>
     <!------------
     - NAVIGATION -
     ------------->
@@ -294,7 +301,7 @@
     ----------------------->
     <section id="testimonialsSection">
       <div class="container p-0">
-        <div class="bg-purple my-4">
+        <div class="bg-purple mt-4">
           <div class="py-lg-4">
             <div class="row m-0 py-4">
               <div class="col-lg-7 p-0 p-lg-4 order-2 order-lg-1">
@@ -315,9 +322,7 @@
                               data-slide-to="0"
                               class="active"
                             >
-                              <div
-                                class="img-box border rounded-circle m-auto"
-                              >
+                              <div class="img-box border rounded-circle m-auto">
                                 <img
                                   class="d-block w-100 rounded-circle"
                                   src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-9/s960x960/82061034_169155390973528_1428074036054720512_o.jpg?_nc_cat=107&_nc_ohc=a_imRe8gIs4AQmqdEjC-0LoxNUw6dZz8fed7BQ2XiQhiyt40kFBnynttw&_nc_ht=scontent.fsan1-2.fna&_nc_tp=1&oh=e6d25bd40cbf45ab884ed7e64abe4703&oe=5E9BC7AB"
@@ -329,9 +334,7 @@
                               data-target="#carouselExampleIndicators"
                               data-slide-to="1"
                             >
-                              <div
-                                class="img-box border rounded-circle m-auto"
-                              >
+                              <div class="img-box border rounded-circle m-auto">
                                 <img
                                   class="d-block w-100 rounded-circle"
                                   src="https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-9/p960x960/80277895_10157634558409827_2056414746298548224_o.jpg?_nc_cat=111&_nc_ohc=meBXHt7dKXMAQnvPrfve5dCSdpa-tUFebqboiH3vQquU5qygeaKKCpg-w&_nc_ht=scontent.fsan1-1.fna&_nc_tp=1&oh=9f1b65c9107a8dac0039a83c330dc51e&oe=5EA08585"
@@ -343,9 +346,7 @@
                               data-target="#carouselExampleIndicators"
                               data-slide-to="2"
                             >
-                              <div
-                                class="img-box border rounded-circle m-auto"
-                              >
+                              <div class="img-box border rounded-circle m-auto">
                                 <img
                                   class="d-block w-100 rounded-circle"
                                   src="http://nicesnippets.com/demo/profile-3.jpg"
@@ -441,6 +442,30 @@
                   Read more glowing testimonials
                   <a class="text-muted" href="testimonials.html">here.</a>
                 </p>
+                <div class="d-flex justify-content-center justify-content-lg-start pb-4">
+                  <div
+                    class="fb-like mr-2"
+                    data-href="https://www.facebook.com/queenmachetetarot"
+                    data-width=""
+                    data-layout="button_count"
+                    data-action="recommend"
+                    data-size="large"
+                    data-share="false"
+                  ></div>
+                  <div
+                    class="fb-share-button"
+                    data-href="https://www.facebook.com/queenmachetetarot/"
+                    data-layout="button"
+                    data-size="large"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fqueenmachetetarot%2F&amp;src=sdkpreparse"
+                      class="fb-xfbml-parse-ignore"
+                      >Share</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -448,13 +473,13 @@
       </div>
     </section>
 
-    <div class="bg-white container p-4 mb-5">
+    <div class=" container px-4 mb-5">
       <section id="aboutSection">
         <div class="container p-0">
-          <div class="bg-white my-4">
+          <div class=" my-4">
             <div class="py-lg-4">
               <div class="row m-0 py-4 text-center">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 bg-white d-flex flex-column justify-content-center p-2 py-4 my-4 my-lg-0 order-1 order-lg-0">
                   <h2>Meet Queen Machete</h2>
                   <p>
                     Using my claircognizant abilities in conjunction with my
@@ -475,13 +500,9 @@
                     alt=""
                   />
                 </div>
-                <div class="col-12 col-lg-4 mt-4">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Repudiandae et omnis enim, eius vero quidem quod delectus?
-                    Maiores at iste nobis, quisquam omnis minima eum, veniam
-                    nihil ipsam quaerat tempora.
-                  </p>
+                <div class="col-12 col-lg-4 mt-4 mt-lg-0 order-2">
+                  
+                  <div class="fb-page" data-href="https://www.facebook.com/queenmachetetarot/" data-tabs="timeline, messages" data-width="" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/queenmachetetarot/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/queenmachetetarot/">Queen Machete Tarot</a></blockquote></div>
                 </div>
               </div>
             </div>
@@ -581,9 +602,9 @@
     background: none;
   }
 
-  .carousel-indicators .active, .carousel-indicators .active .img-box {
-    width: 60px!important;
-    
+  .carousel-indicators .active,
+  .carousel-indicators .active .img-box {
+    width: 60px !important;
   }
 
   .text-warning {
@@ -595,13 +616,11 @@
       font-size: 14px;
     }
     .carousel-control-prev {
-      left: -40px;
+      left: -50px;
     }
     .carousel-control-next {
-      right: -40px;
+      right: -50px;
     }
-    .carousel-indicators {
-      top: 190px;
-    }
+    
   }
 </style>
