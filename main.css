@@ -1,3 +1,18 @@
+.cursive-header {
+  font-family: "Cookie", cursive;
+  font-size: 3rem;
+}
+
+.caption-header {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.header-small {
+  font-size: 1.25rem;
+}
+
 .contact-text a {
   color: rgb(116, 0, 222)!important;
 }
@@ -15,7 +30,6 @@ h2,
 h3 {
   font-family: "Cookie", cursive;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -23,7 +37,6 @@ h2 {
   letter-spacing: 2px;
   text-align: center;
   font-weight: 400;
-  text-transform: capitalize;
   z-index: 10;
   opacity: 0.9;
 }
@@ -284,7 +297,7 @@ nav {
 @media screen and (max-width: 767px) {
   .block {
     padding: 30px;
-    width: 420px;
+    width: 500px;
   }
 
   .header-img img {
@@ -292,11 +305,13 @@ nav {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 479px) and (max-width: 767px) {
   .block {
     padding: 30px 15px;
-    width: 290px;
+    width: 425px;
   }
+
+  
 
   .header-img img {
     max-width: 200px;
@@ -304,6 +319,12 @@ nav {
   
 }
 
+@media screen and (max-width: 478px) {
+  .block {
+    padding: 10px 15px;
+    width: 320px;
+  }
+}
 
 
 @media screen and (max-width: 767px) {
