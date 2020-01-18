@@ -303,6 +303,10 @@ nav {
   .header-img img {
     max-width: 250px;
   }
+
+  .audience {
+    margin: 20px auto;
+  }
 }
 
 @media screen and (min-width: 479px) and (max-width: 767px) {
