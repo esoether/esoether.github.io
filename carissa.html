@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carissa</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/ed4b5e3ec3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap core JS-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="raven.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!----------
+    -- HEADER --
+    ----------->
+    <header class="img-header">
+      <!--OVERLAY-->
+      <div class="header-img">
+        <h2 class="display-4">Carissa</h2>
+      </div>
+    </header>
+
+    <main>
+      <!----------------
+      -- HERO SECTION --
+      ----------------->
+      <section>
+        <div class="m-0">
+          <div class="line-break mb-2"></div>
+
+          <div class="block text-center">
+            <img id="myImg" class="img-fluid mb-4" src="carissa.png" />
+            <p>
+              Welcome to your chart! You can click the image to enlarge it. Find
+              a brief description of your <em>Big Three</em> placements below.
+              Scroll down a little more for some important events of 2020 and
+              what areas you should expect to see change.
+            </p>
+            <p class="small">
+              <em
+                >Please take this interpretation with a grain of salt as I
+                cannot see the future and everyone will have their own personal
+                interpretation of the planets.</em
+              ><strong>Your fate is forever in your hands. </strong>😊
+            </p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01" />
+              <div id="caption"></div>
+            </div>
+
+            <script>
+              // Get the modal
+              var modal = document.getElementById("myModal");
+
+              // Get the image and insert it inside the modal - use its "alt" text as a caption
+              var img = document.getElementById("myImg");
+              var modalImg = document.getElementById("img01");
+              var captionText = document.getElementById("caption");
+              img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+              };
+
+              // Get the <span> element that closes the modal
+              var span = document.getElementsByClassName("close")[0];
+
+              // When the user clicks on <span> (x), close the modal
+              span.onclick = function() {
+                modal.style.display = "none";
+              };
+            </script>
+          </div>
+
+          <!-- <div class="line-break mt-3"></div> -->
+        </div>
+
+        <div class="container-fluid my-lg-4">
+          <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+              <div
+                class="panel-heading d-flex flex-column flex-sm-row justify-content-center justify-content-sm-end"
+              >
+                <ul class="nav nav-tabs">
+                  <li>
+                    <a href="#sun" class="active" data-toggle="tab"
+                      >Sun in Sagittarius</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#tab2primary" data-toggle="tab">
+                      Moon in Taurus
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#tab3primary" data-toggle="tab">Aries Rising</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div class="tab-pane active" id="sun">
+                    <hr class="d-none d-md-block" />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="sun.png"
+                        alt="sun"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          The Sun provides us with our central vital source of
+                          energy. It represents the conscious self-hood of the
+                          individual psyche – the power to do and to be. It
+                          functions as the cloak our soul has chosen to
+                          creatively actualize its purpose, and the heart and
+                          core of beingness. This urge represented by the Sun is
+                          the desire for full self-expression, for manifesting
+                          personal power and talent in ways that inspire others
+                          to express their creatively. This is sometimes
+                          referred to as our yang energy, and it is
+                          traditionally where we shine.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <p>
+                      Ruled by expansive Jupiter, Sagittarian energy knows no
+                      bounds when it comes to inspiring others with its broad,
+                      optimistic viewpoints. It strives for the future and for
+                      higher knowledge as it shoots its arrows at distant
+                      targets – reveling in possibility. The wandering
+                      philosopher searches restlessly for space to contemplate
+                      life's bigger questions, preaching that the journey itself
+                      is often more of a reward than the destination – but a
+                      heart cloaked in buoyant moral righteousness can be as
+                      ignorant as a heart that detests knowledge.
+                    </p>
+                    <p>
+                      <strong>The Sun</strong> in Sagittarius can feel
+                      subconsciously restless no matter what freedom and
+                      adventures it experiences. The overwhelming need to be
+                      recognized for its divine spontaneous wisdom and scholarly
+                      search for the truth can result in an aversion to
+                      committment – an exaggerated voice that sticks its foot in
+                      its mouth as it tries to secure the dogmatic moral
+                      high-ground. Yet when provided with the freedom to stretch
+                      its horizons, the Sun in Sagittarius is curious, playful,
+                      idealistic, and inspired enough to gift everyone around
+                      with a stroke of good fortune that allows each of us to
+                      connect to our higher truths.
+                    </p>
+                    <p>
+                      All-consuming fire at its core, the world can often seem
+                      like an confining iron cage, but a Sagittarius Sun is the
+                      radiant warm truth of a sunny day outdoors – its
+                      long-reaching light a faithful beacon for all who find
+                      themselves on the endless quest for meaning.
+                    </p>
+                    <p>
+                      <strong
+                        >Sagittarius Suns are bestowed upon souls who have
+                        chosen to explore the right:</strong
+                      >
+                    </p>
+                    <ul>
+                      <li>To be free</li>
+                      <li>To experience being the intellectual authority</li>
+                      <li>
+                        To be acknowledged and appreciated for being noble and
+                        deserving
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane" id="tab2primary">
+                    <hr class="d-none d-md-block" />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="moon2.jpg"
+                        alt="moon"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          The Moon acts as a reflector of our true selves (Sun)
+                          and explains how we experience ourselves on a less
+                          conscious level. Typically the governing influence
+                          during childhood, the Moon manifests as emotions,
+                          instincts, intuition, self-care, and self-discovery.
+                          The Moon is what we need for emotional satisfaction
+                          and also the process through which we may separate
+                          ourselves emotionally from other people, where issues
+                          of personal insecurity may arise to be purified. This
+                          is sometimes referred to as our yin energy.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <h3 class="mt-4">Unconscious Expression</h3>
+                    <p>
+                      The unconscious Moon in Taurus might habitually seek
+                      others to provide attention, pampering, and love by
+                      supplying material and sensual comforts. This dependency
+                      can create an impression of personal inadequacy in order
+                      to induce others to give the Moon their resources. By
+                      projecting a helplessness in obtaining material goods, the
+                      Moon in Taurus encourages others to furnish it with
+                      comforts. Then it feels loved, secure, and worthwhile. But
+                      in displaying an image of helplessness to others, the Moon
+                      may also begin to believe it.
+                    </p>
+                    <p>
+                      Self-worth can feel undermined when others respond by
+                      contributing to the unconscious Moon in Taurus'
+                      sustenance, and the aid it receives from others reinforces
+                      the belief that it lacks the energy or abilities to
+                      provide its own support. When its emotional security
+                      depends upon the material aid of others, it cannot be
+                      creative or capable for fear that its comforts will be
+                      taken away. Thus, it feels helpless and unable to actively
+                      establish its material sense of worth.
+                    </p>
+                    <h3 class="mt-4">Conscious Expression</h3>
+                    <p>
+                      At its highest manifestion, Taurus Moon can gain a deeper
+                      sense of inner stability and self-worth by using its
+                      personal resources to support and contribute to the
+                      material stability of the environment. When it is able to
+                      recognize that the people who feel good about themselves
+                      are those who are contributing their talents and resources
+                      in a tangible way, the Moon in Taurus is inspired to find
+                      confidence in its ability to manifest and establish its
+                      creativity
+                    </p>
+                    <p>
+                      As Taurus Moon recognizes that relying on others to create
+                      its self-worth does not work, it frees itself to share its
+                      own innate sense of security and grounded energy with
+                      others so it can then experience the stability and luxury
+                      it wants. It can do this by appreciating its own ideals
+                      enough to manifest them. This frees it to create a surplus
+                      of personal resources that provides patient deliberate
+                      pleasure in the natural sensory world.
+                    </p>
+                    <h3 class="mt-4">Past Lives</h3>
+                    <p>
+                      Past lives spent in positions of affluence, material
+                      security, and comfort can cause a Taurus Moon to come into
+                      this lifetime seeking material security above all else. It
+                      associates having a strong financial base with emotional
+                      stability and ease. Because it is accustomed to
+                      accumulation, it can have a difficult time letting go of
+                      anything, even things that are holding it back. This can
+                      impede the flow of money coming into the Taurus Moon's
+                      life.
+                    </p>
+                    <p>
+                      Due to past lives of physical sensitivity and indulgence,
+                      the Moon in Taurus has strong physical desires for
+                      sensuality, touching, and physical contact in this
+                      incarnation. The Moon in Taurus is learning to accept the
+                      natural healthiness of its needs and being open to having
+                      them fulfilled – becoming aware of the enrichment the
+                      Universe offers it through other people. It is here to
+                      learn to accept the idea of bargaining and discounts so it
+                      can drop the assumption that it has to pay the full dollar
+                      amount for everything it wants.
+                    </p>
+                    <p>
+                      The first thing to let go of is counterproductive ideas:
+                      the idea that you have a difficult time with money; the
+                      idea that you have to earn every penny on your own and
+                      that it's going to be a tough process; and the idea that
+                      you have to do everything yourself, in exactly your way,
+                      for your needs to be met.
+                    </p>
+                    <h3 class="mt-4">Key: Going with the Flow</h3>
+                    <p>
+                      The Moon in Taurus' lesson is to learn to trust the
+                      universe. It can have such a strong fear of losing its
+                      material security that it creates a poverty consciousness
+                      in your life, feeling that resources are limited and that
+                      it must be very careful about how it spends any of its
+                      money, time, and possessions.
+                    </p>
+                    <p>
+                      By focusing less on financial or material restrictions and
+                      by simply being open to the universe blessing you with
+                      prosperity, you can encourage your Taurus Moon to focus
+                      less on worry and more on visualizing the universe pouring
+                      blessings onto you which you receive with joyful
+                      appreciation. In this way, you can open your Moon up to
+                      receive the abundance it seeks at last. The challenge is
+                      to be open to the joy of freely accepting resources from
+                      other people and releasing the ego identification, not
+                      feeling pressures that you have to do something in return.
+                    </p>
+                  </div>
+                  <div class="tab-pane" id="tab3primary">
+                    <hr />
+                    <div
+                      class="d-md-flex align-items-center text-center text-md-left"
+                    >
+                      <img
+                        src="ac.png"
+                        alt="ac"
+                        style="height: 150px;"
+                        class=" mb-3 mb-md-0 mr-3"
+                      />
+                      <p>
+                        <em>
+                          Also called the Ascendant (AC) for the sign that was
+                          rising on the Eastern horizon specific to the time and
+                          location of birth. Abstractly, these are soul desires
+                          on a subjective level which operate as the window or
+                          lens through which we see the world and the
+                          instinctive mask we present as to the outside. It is
+                          the filter through which everything we are internally
+                          is projected into the external world and through which
+                          everything in our outer environment is personally
+                          interpreted by us. This is the lens through which we
+                          filter our perspective on life and also how others
+                          first see us or respond to us – how we begin/start
+                          things. The AC also represents the legacy available to
+                          us and the innate qualities that have been the most
+                          fully developed and mastered through numerous past
+                          life experiences – our inherited gifts.</em
+                        >
+                      </p>
+                    </div>
+                    <hr />
+                    <div class="d-md-flex">
+                      <div class="mr-md-4">
+                        <p><strong>Step into the role of:</strong></p>
+                        <ul>
+                          <li><em>The Independent One</em></li>
+                        </ul>
+                      </div>
+                      <div class="ml-md-4">
+                        <p><strong>Hold the intention of:</strong></p>
+                        <ul>
+                          <li>
+                            <em
+                              >"How can I give you the confidence to make a new
+                              beginning?"</em
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <p>
+                      With your window to the world (Ascendant/Rising) in Aries,
+                      you interact with the external world from a position of
+                      independence, expressing your inner being with an aura of
+                      self-sufficiency.
+                    </p>
+                    <p>
+                      When looking outside yourself, you see the people and
+                      situations around you in terms of whether or not your
+                      independent spirit will be valued and whether
+                      opportunities for self-discovery exisit. You
+                      <em>interpret</em> the behavior of others toward you in
+                      terms of how well they acknowledge you as a unique and
+                      separate person and support your independent nature.
+                    </p>
+                    <p>
+                      You express your personality and attitude in ways that you
+                      feel demonstrate bravery, self-reliance, and openness to
+                      self-discovery. Your attitude and behavior show that you
+                      are very appreciative of others and encourage them to
+                      pursue their dreams – and you expect others to appreciate
+                      and encourage you in return.
+                    </p>
+                    <h3 class="mt-4">Your Achilles' Heel</h3>
+                    <p>
+                      Your natural approach to life is to express your innate
+                      leadership abilities through your courage and your
+                      assertive impulses. This can result in your seeing those
+                      who <em>don't</em> approach life in this way as being
+                      compromising and/or indecisive. Because you sometimes
+                      think <em>others</em> are this way, it's easy for you to
+                      assume that they could possibly view <em>you</em> this way
+                      as well – and it is your fear of this potential
+                      disapproval that creates your Achilles' heel.
+                    </p>
+                    <p>
+                      If you don't stay in touch with your own natural instincts
+                      and instead allow this fear of how others might see you to
+                      distract you from your own independent point of view, you
+                      end up suppressing your assertive impulses and giving away
+                      your power. Then you lose confidence in your innate sense
+                      of courage and your ability to lead.
+                    </p>
+                    <p>
+                      For instance, you may refuse to take the initiative and
+                      extend yourself to others – fearing they might think you
+                      are weak or needy. However, if you allow this to happen,
+                      then instead of using the power of your inborn assertive
+                      abilities constructively, you turn it inward against
+                      yourself where it becomes a stubborn impediment. When all
+                      that power is not outwardly expressed, it implodes and
+                      blocks the flow of your own vital energy.
+                    </p>
+                    <p>
+                      Then others may in fact see you as indecisive, or as Mr.
+                      or Ms. Nice, which can lead them to overstep their bounds
+                      with you. If this happens, you may unexpectedly erupt into
+                      anger, which can create an ongoing sense of animosity
+                      between you. Then you may unconsciously use your sense of
+                      independence in a brusque manner to keep others away –
+                      this in turn leading to feelings of isolations.
+                    </p>
+                    <h3 class="mt-4">Self-Actualization</h3>
+                    <p>
+                      You have special inborn abilities to achieve results in
+                      vitality and self-confidence by motivating and inspiring
+                      others through your willingness to act on the
+                      impulsiveness of your own bold spirit – exploring
+                      innovative ideas and emboldening others to take a chance
+                      on something new! Using your gifts for pioneering and
+                      courageous leadership increases your self-confidence
+                      socially and opens the way to you experiencing ongoing
+                      vitality in your life. Although it can be difficult to get
+                      past your fear of how other people will see you and the
+                      potential of their disapproval, the highest path is to be
+                      courageous enough to overcome this obstacle and fully
+                      express your true nature by allowing your willingness to
+                      be independent and your gift of asserting yourself to
+                      carry you to a position where you can free others to do
+                      the same.
+                    </p>
+                    <p>
+                      Then your greatest challenge becomes using the positive
+                      <em>and</em> negative feedback from your environment to
+                      shift and fine-tune the ways in which you express your
+                      gifts and cultivate your ability to consistently create
+                      positive results.
+                    </p>
+                    <p>
+                      When you actively use your natural gifts for being direct
+                      and authentic in your presentation on a level that
+                      invigorates those around you, then you will experience
+                      yourself as a powerful cause in your own life rather than
+                      living in fear of others' perceptions.
+                    </p>
+                    <h3 class="mt-4">Past-Life Gifts</h3>
+                    <p>
+                      In many past lifetimes, your survival has depended on
+                      solely on your own instincts and actions. Many of these
+                      past incarnations were as a warrior – embracing courage
+                      and self-reliance as the most important values. As a
+                      result, you are innately aware of the importance of
+                      bravery and approaching the battlefield of life with the
+                      confidence to overcome any obstacle through your
+                      willingness to fight for what you feel is right.
+                    </p>
+                    <p>
+                      Lifetimes of having to actively fight to reach long-term
+                      goals has given you a somewhat argumentative,
+                      straightforward, childlike, and explosive demeanor, but
+                      also a great sense of self and innocence. At your best,
+                      you do not angrily attack those who disagree with you but
+                      instead look to see how you can use current circumstances
+                      to "lead the charge" and serve the higher cause you
+                      believe in.
+                    </p>
+                    <p>
+                      During these past lives, you have mastered the art of
+                      taking charge of any competition in which you are
+                      involved, and expressing yourself passionately in
+                      disagreements – especially when it comes to authority
+                      figures. Your talent for fighting valiantly for the
+                      underdog as an underdog yourself, and your willingness to
+                      stand up for all who cannot stand up for themselves,
+                      teaches us all the value of stepping up to the plate and
+                      owning our ability to be valiant warriors in our own
+                      lives.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+  </body>
+</html>
