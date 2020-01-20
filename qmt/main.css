@@ -439,6 +439,28 @@ body {
   background-size: cover;
 }
 
+#firstHook .photoHook {
+  background: linear-gradient(
+    to right,
+    rgba(53, 200, 211, 0.4) 10%,
+    rgba(103, 80, 187, 0.4) 50%), url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 40vh;
+}
+
+#secondHook .photoHook {
+  background: linear-gradient(
+    to left,
+    rgba(53, 95, 211, 0.5) 10%,
+      rgba(187, 80, 187, 0.5) 50%), url('https://images.unsplash.com/photo-1547413749-dd39525702cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+  height: 40vh;
+}
+
 #introSection h1,
 #longerIntroSection h1 {
   text-transform: uppercase;
