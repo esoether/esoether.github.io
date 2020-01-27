@@ -35,6 +35,10 @@ footer .navbar-brand h2 {
   color: rgb(10, 154, 250) !important;
 }
 
+.bg-trans {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .bg-primary {
   background: #0384D7 !important;
 }
@@ -133,9 +137,7 @@ footer .navbar-brand h2 {
   margin: 0 5px;
 }
 
-footer {
-  background: #baa0d8;
-}
+
 
 footer a:nth-child(2) {
   color: rgb(5, 97, 218);
@@ -294,7 +296,7 @@ footer a:hover {
 }
 
 .carousel-inner {
-  height: 225px;
+  height: min-content;
 }
 @media screen and (min-width: 993px) {
   .jumbotron {
@@ -459,6 +461,7 @@ body {
   background-repeat: repeat-y;
   background-size: cover;
   height: 40vh;
+  padding: 80px;
 }
 
 #introSection h1,
@@ -468,12 +471,36 @@ body {
   color: #2b5c89;
 }
 
-#longerIntroSection p {
-  font-size: 1.25rem;
+#longerIntroSection p, #meetSection p {
+  font-size: 1.15rem;
 }
 
 #longerIntroSection svg {
   width: 150px!important;
+}
+
+@media screen and (max-width: 576px) {
+  #firstHook .photoHook, #secondHook .photoHook {
+    height: 65vh;
+    padding: 5vw;
+  }
+
+  #longerIntroSection h4 {
+    font-size: 1.25rem;
+  }
+
+  #longerIntroSection p {
+    font-size: 1rem;
+  }
+  #meetSection p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #meetSection p {
+    font-size: 1.25rem;
+  }
 }
 
 .intro-list {
