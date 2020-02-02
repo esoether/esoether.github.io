@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Bootstrap Static Header -->
+    <div class="jumbotron bg-cover text-white">
+      <div class="container py-5 text-center">
+        <h1 class="display-4 font-weight-bold">Michael Diestra</h1>
+        <h2>Pisces Sun / Scorpio Moon / Libra Rising</h2>
+        <br />
+      </div>
+    </div>
+
+    <!-- For Demo Purpose -->
+    <div class="container px-4 py-lg-3">
+      <div class="row">
+        <div class="col-12 mb-4 text-center">
+          <div class="w-75 mx-auto">
+            <img id="myImg" class="w-75 img-fluid mb-1" src="chart.png" />
+            <p class="small">(Click on the image to enlarge the chart.)</p>
+          </div>
+          <h2 class="h3 font-weight-bold">Welcome to your chart!</h2>
+          <p class="font-italic text-muted">
+            Please take this interpretation with a grain of salt as everyone
+            will have their own personal interpretation of the planets and their
+            positions. <strong>Your fate is forever in your hands.</strong>
+          </p>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
+          </div>
+
+          <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            };
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            };
+          </script>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <!-- Accordion -->
+              <div id="accordionExample" class="accordion shadow">
+                <!-----------
+                ---- SUN ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingOne"
+                    class="card-header bg-white fire shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                        class="d-block position-relative text-dark text-uppercase collapsible-link py-2"
+                        >Sun in Pisces</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                    class="collapse show"
+                  >
+                    <div class="card-body p-5 water custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="sun.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Sun provides us with our central vital source of
+                            energy. It represents the conscious self-hood of the
+                            individual psyche – the power to do and to be. It
+                            functions as the cloak our soul has chosen to
+                            creatively actualize its purpose, and the heart and
+                            core of beingness. This urge represented by the Sun
+                            is the desire for full self-expression, for
+                            manifesting personal power and talent in ways that
+                            inspire others to express their creatively. This is
+                            sometimes referred to as our yang energy, and it is
+                            traditionally where we shine.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>PISCES 9°1' - 10°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >An old witch on a windy promontory. She is calling
+                            to the sea.</em
+                          ></strong
+                        ><br />
+                        "Wildly tuned in. Staggeringly aware of the overall
+                        situation and its call, you respond deeply and with
+                        earnest, plaintive engagement with all that is
+                        happening. You are profoundly emotional, physical, and
+                        personal in order to ground and focus a vaster
+                        attunement, urgently and critically mobilized at hot
+                        spots. Assigned to tune in to everything and make sure
+                        all the cosmic bases are covered--inner-planes activity
+                        predominates. You live within vast worlds, and are
+                        psychically charged with all that is being taken in, but
+                        your central focus is to respond, to report, to send the
+                        inner messages, to keep the lines open. Emergency and
+                        crisis sensibility inside of things, searching for
+                        signs, and knowing how to be there on the spot to turn
+                        things around by inward force of the magical will."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#pisces10"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                --- MOON ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingTwo"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Moon in Scorpio</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 water custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="moon.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>SCORPIO 13°1' - 14°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >Women dressed in black. They are wailing and
+                            mourning.</em
+                          ></strong
+                        ><br />
+                        "Darkness, heaviness, sobriety, grimness. Grief for lost
+                        worlds. Dramatically cleansing what must be let go.
+                        Freeing the spirit. Laboriously and intensively
+                        preoccupied with endings, and captivated by the past,
+                        you are fascinated with the decomposition of things.
+                        Living deep in the unconscious, inside collective
+                        dramas. Lost to yourself. Thrown into patterns,
+                        syndromes, worlds that require drastic measures to
+                        transform. A feeling of being cursed. A sensibility of
+                        doom. A creation of the worst inside. The long
+                        established, deeply ingrained consciousness of stark
+                        limitation. Getting under it and destroying it the long
+                        hard way."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#scorpio14"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ----- AC ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingThree"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Libra Rising</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 air custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="ac.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            Also called the Ascendant (AC) for the sign that was
+                            rising on the Eastern horizon specific to the time
+                            and location of birth. Abstractly, these are soul
+                            desires on a subjective level which operate as the
+                            window or lens through which we see the world and
+                            the instinctive mask we present as to the outside.
+                            It is the filter through which everything we are
+                            internally is projected into the external world and
+                            through which everything in our outer environment is
+                            personally interpreted by us. This is the lens
+                            through which we filter our perspective on life and
+                            also how others first see us or respond to us – how
+                            we begin/start things. The AC also represents the
+                            legacy available to us and the innate qualities that
+                            have been the most fully developed and mastered
+                            through numerous past life experiences – our
+                            inherited gifts.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>LIBRA 19°1' - 20°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >A man with a single horn coming out of his
+                            forehead.</em
+                          ></strong
+                        ><br />
+                        "When the multisensory faculties are fully in place,
+                        worlds open, time stretches, the wonder is born. There
+                        had been something missing, something vital forgotten.
+                        You are called up to make the difference. Living on the
+                        threshold. More magical than can be thought or kept
+                        track of. A rapture of multidimensional discovery.
+                        Release into the infinite. You cross over and are never
+                        the same, seeing what truly is in all of its glory. And
+                        coming in fullness of time to claim the timeless ways
+                        once again on the next spiral. The rarest of natures is
+                        peeking out from behind a picture book and manifesting
+                        in ordinary life, with extraordinary clarity."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#capricorn19"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- MERC ---
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingFour"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Mercury in Pisces</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 water custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="mercury.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>PISCES 0°0' - 1°0'</h4>
+                      <p class="small">
+                        <strong><em>A field of dandelions.</em></strong
+                        ><br />
+                        "Teeming with mass consciousness. You feel yourself to
+                        be as anonymous and undifferentiated as you can possibly
+                        be. Hiding in this identification is comfortable, cozy,
+                        and safe, and it can be prolonged indefinitely. While
+                        you wait here with individuality suspended and all of
+                        life being right at hand, the most remarkable
+                        discoveries can take place. In particular, you are
+                        welcomed and invited to know the ancestors, to know the
+                        collective, to know the sweep of evolution intimately
+                        and compulsively, to be swept along on the tides of
+                        time, to stay bonded and rooted in the dream plant
+                        state. It is a rapture and an abandon. Eventually it
+                        satiates itself. And then you are sprung very fresh and
+                        very new, to be free in the world, and to make the
+                        ultimate discovery of the vast difference between
+                        casting your fate to the winds and being vitally present
+                        in the moment's dawning with a celebratory fervor."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#pisces1"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                --- VENUS ---
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingFive"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Venus in Pisces</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 water custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="venus.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>PISCES 1°1' - 2°0'</h4>
+                      <p class="small">
+                        <strong><em>A man turning into a werewolf.</em></strong
+                        ><br />
+                        "The master of disguises. Shape-changing as a whole way
+                        of life. The question of identity as a baffling mystery,
+                        a riddle of destiny. Becoming so many things, whatever
+                        feels emphatic, impressive, and in keeping with the
+                        subtle fluids of the situation, you are transported by a
+                        plastic, formative nature into realms you would never
+                        access if you were straight and simply sincere. Tricks
+                        within tricks. Worlds within worlds. Captured by the
+                        uncanny power of turning yourself into the perfect live
+                        model of a given way of being. Deep down inside you
+                        witness everything that happens, amazed to be getting
+                        away with it, and waiting to be unveiled in the fullness
+                        of time when the cycle is over and you must find another
+                        place to hide, unless you are finally ready to let
+                        yourself be."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#pisces2"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- MARS ---
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingSix"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseSix"
+                        aria-expanded="false"
+                        aria-controls="collapseSix"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Mars in Libra</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    aria-labelledby="headingSix"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 air custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="mars.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>LIBRA 2°1' - 3°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >An inaccurate, imaginative map of the world.</em
+                          ></strong
+                        ><br />
+                        "Subjective depths become all-permeating. The surface
+                        facts seem like nothing. You are plunged into your
+                        internal voyage, and compelled to take it up blindly and
+                        innovatively. You cannot depend upon anybody's previous
+                        experience, for you are moving into a whole different
+                        reality--inward development as a total way of life, yet
+                        surrounded and beset by pressures, demands, and
+                        distorted reflections. You therefore have to operate
+                        virtually oblivious to the feedback loop of the
+                        sociocultural sphere--to be blind, deaf, and dumb to how
+                        anything appears to anybody. And to act as though the
+                        inner world you are cooking up for the future is all
+                        that counts, and everything else is a blur of facts,
+                        figures, and passing semblances."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#libra3"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- JUP ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingSeven"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseSeven"
+                        aria-expanded="false"
+                        aria-controls="collapseSeven"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Jupiter in Aquarius</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    aria-labelledby="headingSeven"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 air custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="jupiter.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>AQUARIUS 8°1' - 9°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >Violets blooming by the barred windows of a
+                            dungeon.</em
+                          ></strong
+                        ><br />
+                        "The old past-centered facets of life are predominant in
+                        this world. Those who take on the thought patterns of
+                        this old earth find themselves immensely trapped in time
+                        and space, and in physical form most of all. Yet in the
+                        very midst of thinking and operating in this
+                        rationalistic way, you are subtly and secretly fostering
+                        a great wealth of New Earth consciousness, of fresh ways
+                        of seeing. By relentlessly exposing yourself to the
+                        rigors and consequences of the mentally-based world, you
+                        come to that edge where the way to liberation becomes so
+                        sharp that the deeper seeing comes up to give you space
+                        and breath. It is quite a process to live between
+                        cycles, bridge divergent worlds, and feel the necessity
+                        of keeping it all going. But truly the soul is
+                        witnessing each dangling moment, and preparing to go
+                        free when the season is right and the prison doors open
+                        of themselves, as the karma is completed and the unknown
+                        calls you onward."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#aquarius9"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- SAT ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingEight"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseEight"
+                        aria-expanded="false"
+                        aria-controls="collapseEight"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Saturn in Aries</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseEight"
+                    aria-labelledby="headingEight"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 air custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="saturn.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>ARIES 6°1' - 7°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >A double-headed eagle, the heads face in opposite
+                            directions.</em
+                          ></strong
+                        ><br />
+                        "Two completely separate identities can be lived at
+                        once. What is foremost is to be mentally prepared,
+                        vigilantly watchful, and intent upon moving straight on
+                        and not looking back. Your alter-ego, your double, your
+                        nemesis, shadow, and friend is seeing life through the
+                        rearview mirror, completely enwrapped in the
+                        diametrically opposite world to the one consciously
+                        pursued. The forefront-awareness sustains admirably and
+                        avidly its directional instinct for which way is forward
+                        from here. Your subconscious shadow-self is equally
+                        devoted to seeing, knowing, and instrumenting the
+                        backward gaze, the obstructive momentum. Living along
+                        this edge hones the sensibility, clarifies things
+                        immensely--if ever both ends are claimed, honored, and
+                        given their due. It is a challenge and an adventure to
+                        be rabidly dual, a karmic crossroads with immense
+                        struggle and conflict and power. It contains a deep-down
+                        gnawing hunger for resolution and reconciliation and
+                        integration, so elusive, so unattainable, and yet so
+                        needed and sought in the destiny-reckoning that refuses
+                        to stay split, whatever it will take to fuse the bipolar
+                        visions into unity."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#aries7"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- URA ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingNine"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseNine"
+                        aria-expanded="false"
+                        aria-controls="collapseNine"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Uranus in Aquarius</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseNine"
+                    aria-labelledby="headingNine"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 air custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="uranus.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            <strong
+                              >Uranus is a generational planet which changes
+                              signs about every 7 years. You share this sign
+                              placement with larger groups of people, but its
+                              house placement and aspects make it personal to
+                              your chart.</strong
+                            >The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>AQUARIUS 6°1' - 7°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >A woman burning a book of black magic.</em
+                          ></strong
+                        ><br />
+                        "Karma works by indirection. We draw to ourselves what
+                        we previously activated and as it comes back, we curse
+                        the reflection. Such gestures multiply. They gather
+                        force and momentum. And soon we have fixed ideas about
+                        what is pulling us back and what is carrying us forward.
+                        Before you know it, you have become partisan, taking up
+                        this side against this other side, swept up in the
+                        drama. And you even become sure in your mind that whole
+                        segments of existence are bad and terrible and must be
+                        renounced completely. Yet you are making a
+                        self-commentary in where your mind as led you, and there
+                        must come a point in the journey when the mind strips
+                        away its disguise and you know once again that all is of
+                        God, that all is toward the good, and nothing can ever
+                        harm you, unless you insist upon it."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#aquarius7"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- NEP ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingTen"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseTen"
+                        aria-expanded="false"
+                        aria-controls="collapseTen"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Neptune in Capricorn</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseTen"
+                    aria-labelledby="headingTen"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 earth custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="neptune.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>CAPRICORN 28°1' - 29°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >An architect carefully surveying old ruins.</em
+                          ></strong
+                        ><br />
+                        "What is to be seen is the outer skeleton of things.
+                        What is to be known is the inner essence of things. The
+                        code, the extraordinary revelation, the realization is
+                        there inherently in the very substance of existence. A
+                        practiced eye can see inside, can penetrate and
+                        illuminate. The schooling in perception comes between
+                        lives and then overshadows each and every idea or notion
+                        anybody can come up with. But to access and do honor to
+                        this advanced faculty is rare. For seeing the whole
+                        truth is excruciating to the ego-mind. And therefore the
+                        battle is on to awaken to your innermost truth, or to
+                        succeed brilliantly in adapting your truth to the
+                        marketplace, selling your soul to the highest
+                        bidder."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#capricorn29"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-----------
+                ---- PLU ----
+                ------------>
+                <div class="card">
+                  <div
+                    id="headingEleven"
+                    class="card-header bg-white shadow-sm border-0"
+                  >
+                    <h6 class="mb-0 font-weight-bold">
+                      <a
+                        href="#"
+                        data-toggle="collapse"
+                        data-target="#collapseEleven"
+                        aria-expanded="false"
+                        aria-controls="collapseEleven"
+                        class="d-block position-relative collapsed text-dark text-uppercase collapsible-link py-2"
+                        >Pluto in Sagittarius</a
+                      >
+                    </h6>
+                  </div>
+                  <div
+                    id="collapseEleven"
+                    aria-labelledby="headingEleven"
+                    data-parent="#accordionExample"
+                    class="collapse"
+                  >
+                    <div class="card-body p-5 fire custom-scrollbar-css">
+                      <div
+                        class="d-md-flex align-items-center text-center text-md-left"
+                      >
+                        <img
+                          src="pluto.png"
+                          alt="sun"
+                          style="height: 100px;"
+                          class=" mb-3 mb-md-0 mr-3"
+                        />
+                        <p>
+                          <em>
+                            The Moon acts as a reflector of our true selves
+                            (Sun) and explains how we experience ourselves on a
+                            less conscious level. Typically the governing
+                            influence during childhood, the Moon manifests as
+                            emotions, instincts, intuition, self-care, and
+                            self-discovery. The Moon is what we need for
+                            emotional satisfaction and also the process through
+                            which we may separate ourselves emotionally from
+                            other people, where issues of personal insecurity
+                            may arise to be purified. This is sometimes referred
+                            to as our yin energy.</em
+                          >
+                        </p>
+                      </div>
+                      <hr />
+                      <p class="font-weight-light mt-0">
+                        The Sun rules Leo, and there is no other sign in which
+                        the solar light can shine quite as naturally. No heart
+                        glows harder or brighter than this. Leo energy is regal
+                        and dignified, proudly and grandly assuming dominion
+                        over the marvelous magical creativity of life. With a
+                        birthright to glory and unique personal access to inner
+                        child, the generous lion rules over the heart. Because
+                        of this, the Sun in Leo ferociously defends the innocent
+                        and the vulnerable – any sort of injustice or betrayal
+                        is a disgrace that has no place in its kingdom.
+                      </p>
+                      <p class="font-weight-light">
+                        In the 7th House, the Leo Sun can feel that its light
+                        only truly shines when it shares with others the
+                        self-worth and substantiality of identity it came into
+                        the world with. It strives to radiate a basis for
+                        existence and to illuminate the path of selfhood for
+                        others – to reveal to others the own light within them
+                        by sharing its own heavenly light. The overwhelming need
+                        to be recognized and adored for its creative gifts and
+                        undeniable warmth can result in vicious self-criticism
+                        if others fail to provide it with the affection and
+                        reassurance it needs. Yet when provided with a deserved
+                        doting partner who sees the value of its compassion, the
+                        7th House Leo Sun's inner glow is restored and
+                        recharged.
+                      </p>
+                      <h4>SAGITTARIUS 5°1' - 6°0'</h4>
+                      <p class="small">
+                        <strong
+                          ><em
+                            >A pair of shoes with live wings on each.</em
+                          ></strong
+                        ><br />
+                        "To delight in pursuit is never to get there, but to
+                        enjoy the ride all the way. To identify with flight is
+                        to run from what is dense and heavy and to deny the pain
+                        of Earth. And to dream of a personal limitlessness is to
+                        stay out of realities that bind. The longing and the
+                        craving, the fantasy and the vision are everything here.
+                        And as you perpetuate illusions you feel no pain.
+                        Somewhere you are convinced that the very best thing is
+                        to be free, and that to fall for linear progression is
+                        to be a fool. Everything you know and follow is true in
+                        worlds beyond, and false in the dense immediacy of Earth
+                        experience."<br />
+                        <a
+                          href="https://aquaorfire.net/astrology/inside_degrees/inside_degrees.html#sagittarius6"
+                          target="_blank"
+                          >– "Inside Degrees" by Ellias Lonsdale</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <p class="font-italic text-muted py-4"></p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

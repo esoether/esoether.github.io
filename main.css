@@ -285,6 +285,10 @@ nav {
   .nav-item {
     margin-right: 50px;
   }
+
+  .audience {
+    margin: 20px 0;
+  }
 }
 
 @media screen and (max-width: 959px) and (min-width: 768px) {

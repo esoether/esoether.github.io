@@ -1,0 +1,152 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.bg-cover {
+  background: url('bg.jpg');
+  background-attachment: fixed;
+  background-size: cover !important;
+  height: 500px;
+  background-position: center top;
+}
+
+@media screen and (max-width: 567px) {
+  .bg-cover {
+    background: url('bgmobile.jpg');
+    background-position: 90% 10%;
+  }
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+body {
+  min-height: 100vh;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* Horizontal line */
+.collapsible-link::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.custom-scrollbar-css {
+  height: 500px;
+}
+
+@media screen and (max-width: 567px) {
+  .custom-scrollbar-css {
+    height: 350px;
+  }
+}
+
+
+/* Custom Scrollbar using CSS */
+.custom-scrollbar-css {
+  overflow-y: scroll;
+}
+
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+}
+
+.fire::-webkit-scrollbar-thumb {
+  background-color: #ff5100;
+  background-image: linear-gradient(to top, #ff5100 0%, #d59f3a 100%);
+  background-image: linear-gradient(to top, #ff5100 0%, #d59f3a 100%);
+}
+
+.earth::-webkit-scrollbar-thumb {
+  background-color: #00ff22;
+  background-image: linear-gradient(to top, #007a10 0%, #78d53a 100%);
+  background-image: linear-gradient(to top, #007a10 0%, #73d53a 100%);
+}
+
+.air::-webkit-scrollbar-thumb {
+  background-color: #ae00ff;
+  background-image: linear-gradient(to top, #c400ba 0%, #ae00ff 100%);
+  background-image: linear-gradient(to top, #c400ba 0%, #ae00ff 100%);
+}
+
+.water::-webkit-scrollbar-thumb {
+  background-color: #0084ff;
+  background-image: linear-gradient(to top, #0061bb 0%, #0084ff 100%);
+  background-image: linear-gradient(to top, #0061bb 0%, #0084ff 100%);
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 991px) {
+  .modal-content {
+    max-height: 90%;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
