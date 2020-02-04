@@ -1,0 +1,20 @@
+.page-header-img {
+  background: linear-gradient(rgba(143, 197, 122, 0.5), rgba(62, 172, 77, 0.5)), url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  animation: animatedBackground 40s linear infinite;
+}
+
+body {
+  background: red;
+}
+
+.title {
+  color: red;
+}
