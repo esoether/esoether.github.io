@@ -1,5 +1,5 @@
 .page-header-img {
-  background: linear-gradient(rgba(151, 122, 197, 0.5), rgba(172, 62, 113, 0.5)), url('../img/bg.jpg');
+  background: linear-gradient(rgba(151, 122, 197, 0.5), rgba(172, 62, 113, 0.5)), url('./img/bg.jpg');
   
   background-attachment: fixed;
   background-size: contain;
@@ -13,7 +13,7 @@
 }
 
 .bg-stars {
-  background: linear-gradient(rgba(151, 122, 197, 0.5), rgba(172, 62, 113, 0.5)), url('../img/bg.jpg')!important;
+  background: linear-gradient(rgba(151, 122, 197, 0.5), rgba(172, 62, 113, 0.5)), url('./img/bg.jpg')!important;
   background-attachment: fixed!important;
   background-size: contain!important;
   top: 0;
