@@ -34,7 +34,6 @@
     ></script>
 
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="about.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Aref+Ruqaa:700|Josefin+Sans:400,700&display=swap"
@@ -44,6 +43,13 @@
     <link rel="icon" type="image/x-icon" href="myfavicon.ico" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"
+    ></script>
     <!------------
     - NAVIGATION -
     ------------->
@@ -142,101 +148,518 @@
       </nav>
     </div>
 
-    <!-----------
-    --- ABOUT ---
-    ------------>
-    <div class="container-fluid bg-white">
-      <div class="container px-4 mb-5 mb-lg-0">
-        <section id="aboutSection">
-          <div class="container p-0">
-            <div class="bg-white my-4">
-              <div>
-                <div class="row m-0 pt-4 text-center">
-                  <div
-                    class="col-12 col-lg-4 d-flex align-content-center justify-content-center"
+    <!--------------
+    - HERO SECTION -
+    --------------->
+    <section id="heroSection">
+      <div class="jumbotron mb-0 jumbotron-fluid text-center">
+        <div class="container mx-auto">
+          <h1 class="display-3 text-white pt-3">DISCOVER<br />YOUR TRUTH</h1>
+          <p class="lead text-light">
+            Faciliatate your healing and reclaim your personal power.
+          </p>
+          <button class="btn btn-2 my-3">
+            <a href="services.html" class="text-white">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!---------------
+    - INTRO SECTION -
+    ---------------->
+    <section id="introSection">
+      <!-- Two Columns -->
+      <div class="container-fluid p-4 bg-light">
+        <div class="container">
+          <div class="col-12 py-xl-4 my-4">
+            <p style="font-size: 1.25rem;" class="my-4 text-secondary">
+              Queen Machete Tarot is a beacon of intuition, claicognizant gifts,
+              and metaphysical knowledge shedding light upon your unique path.
+              My calling is to empower you by guiding you to your deeper
+              questions so you can break free from the old patterns and wounds
+              that bind you. Working together, we can bring your challenges and
+              gifts into clear focus and affirm your own personal journey to
+              freedom.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------
+    - FIRST HOOK -
+    ------------->
+    <section id="firstHook">
+      <div
+        class="container-fluid photoHook d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-white text-uppercase pt-4">
+          Heal the Wounds That Bind You
+        </h1>
+        <p class="text-muted" style="font-size: 1.5rem;">
+          Tarot Readings and Community for Self-Empowerment & Self-Discovery.
+        </p>
+      </div>
+      <!-- Two Columns -->
+    </section>
+
+    <div class="bg-white container-fluid pb-5">
+      <!----------------------
+    - LONGER INTRO SECTION -
+    ----------------------->
+      <section id="longerIntroSection">
+        <!-- Three Columns -->
+        <div class="container text-center p-4">
+          <div class="row">
+            <div class="col-12 p-4">
+              <hr />
+              <h4>
+                You don’t want to subscribe to someone else's spiritual truth;
+                you want to honor your own. It is your birthright to be
+                liberated and connected in this lifetime, but it is a journey
+                you shouldn't have to take alone.
+              </h4>
+
+              <hr />
+            </div>
+
+            <div class="row w-100 mx-auto my-2 my-lg-4 pt-lg-2">
+              <div class="col-md-4 my-4 pb-4 py-lg-0 my-lg-0">
+                <img src="tarot.png" class="mb-3" />
+                <p>
+                  I offer custom readings which incorporate tarot, astrology,
+                  and archetypal psychology to deliver the messages you most
+                  need to hear. Are you searching for answers?
+                </p>
+                <button class="btn btn-3">
+                  <a href="services.html" class="text-white">Book Now</a>
+                </button>
+              </div>
+              <div class="col-md-4 my-4 py-4 py-lg-0 my-lg-0">
+                <img src="flower.png" class="mb-3" />
+                <p>
+                  Connect with me on Facebook to enjoy original,
+                  thought-provoking, educational content. Establish your
+                  metaphysical roots and grow with our esoteric community.
+                </p>
+                <button class="btn btn-3">
+                  <a href="https://www.facebook.com/queenmachetetarot/" target="_blank" class="text-white">Get Started</a>
+                </button>
+              </div>
+              <div class="col-md-4 my-4 pt-4 pt-lg-0 my-lg-0">
+                <img src="crystal.png" class="mb-3" />
+                <p>
+                  Intention and purpose are everything. Together we can use
+                  introspection and self-reflection to unlock your unique
+                  personal destiny and forever change your life.
+                </p>
+                <button class="btn btn-3">
+                  <a href="services.html" class="text-white">Learn More</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!------------
+    - SECOND HOOK -
+    -------------->
+    <section id="secondHook">
+      <div
+        class="container-fluid photoHook d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-white text-uppercase pt-4">
+          Queen Machete Tarot
+        </h1>
+        <p class="text-light" style="font-size: 1.5rem;">
+          is dedicated to helping you discover clarity, reclaim your personal
+          power, and embrace your true life path.
+        </p>
+      </div>
+      <!-- Two Columns -->
+    </section>
+
+    <!----------------------
+    - LONGER INTRO SECTION -
+    ----------------------->
+    <section id="introSection">
+      <!-- Two Columns -->
+      <div class="container-fluid p-4 bg-white">
+        <div class="container">
+          <div class="row px-lg-4 mx-lg-4">
+            <div class="col-lg-6 pt-md-4">
+              <h1 class="text-center text-lg-left">Divinely Guided</h1>
+              <ul class="intro-list">
+                <li>
+                  <svg
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <div
-                      class="d-flex align-items-center px-4 mx-4 mb-4 px-lg-0"
-                    >
-                      <img
-                        width="auto"
-                        height="300px"
-                        src="about.jpg"
-                        class=" rounded-img"
-                        alt=""
-                      />
-                    </div>
-                  </div>
+                    <path
+                      d="M23.0667 16.6667H16.6667L46.6667 46.6667L50 43.5333L23.0667 16.6667ZM66.5333 63.7333L63.7333 66.5333C63.425 66.8423 63.0587 67.0875 62.6554 67.2548C62.2522 67.422 61.8199 67.5081 61.3833 67.5081C60.9468 67.5081 60.5145 67.422 60.1113 67.2548C59.708 67.0875 59.3417 66.8423 59.0333 66.5333L48.6333 56.1333L39.7 65L35 60.3L39.7333 55.5667L10 25.8333V10H25.8333L55.5667 39.7333L60.3 35L65 39.7L56.1 48.6L66.5 59C67.8333 60.3333 67.8333 62.4333 66.5333 63.7333V63.7333Z"
+                      fill="#2B5C89"
+                    ></path>
+                  </svg>
+                  Honest, direct readings
+                </li>
+                <li>
+                  <svg
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M58.5599 31.44C58.5599 22.94 55.5399 12.8 55.4133 12.3733C55.2064 11.6873 54.7842 11.0861 54.209 10.6586C53.6339 10.2312 52.9365 10.0003 52.2199 10H27.7799C26.3099 10 25.0133 10.9633 24.5866 12.3733C24.4599 12.8 21.4399 22.94 21.4399 31.44C21.4399 40.5567 28.0533 48.1433 36.7299 49.6967L36.6666 50V63.3333H33.3333C32.4492 63.3333 31.6014 63.6845 30.9763 64.3096C30.3511 64.9348 29.9999 65.7826 29.9999 66.6667C29.9999 67.5507 30.3511 68.3986 30.9763 69.0237C31.6014 69.6488 32.4492 70 33.3333 70H46.6666C47.5507 70 48.3985 69.6488 49.0236 69.0237C49.6488 68.3986 49.9999 67.5507 49.9999 66.6667C49.9999 65.7826 49.6488 64.9348 49.0236 64.3096C48.3985 63.6845 47.5507 63.3333 46.6666 63.3333H43.3333V50L43.2699 49.6933C51.9466 48.14 58.5599 40.5567 58.5599 31.44V31.44ZM39.9999 43.3333C37.1799 43.3263 34.4542 42.3165 32.3102 40.4845C30.1662 38.6525 28.7435 36.1178 28.2966 33.3333H51.6999C51.2544 36.1178 49.8326 38.6529 47.689 40.485C45.5454 42.3172 42.8198 43.3268 39.9999 43.3333V43.3333ZM28.1499 30C28.3566 25.1067 29.5566 19.69 30.3266 16.6667H49.6699C50.4399 19.69 51.6399 25.1067 51.8466 30H28.1499Z"
+                      fill="#2B5C89"
+                    ></path>
+                  </svg>
+                  Compassionate insight
+                </li>
+                <li>
+                  <svg
+                    width="80"
+                    height="80"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M36.6666 13.3333L34.9999 10L33.3332 13.3333L29.9999 13.75L32.7799 16.11L31.6666 20L34.9999 17.78L38.3332 20L37.2199 16.11L39.9999 13.75L36.6666 13.3333ZM64.4466 48.8867L61.6666 43.3333L58.8866 48.8867L53.3332 49.5833L57.9632 53.52L56.1132 60L61.6666 56.2967L67.2199 60L65.3699 53.52L69.9999 49.5833L64.4466 48.8867ZM22.2232 21.11L19.9999 16.6667L17.7766 21.11L13.3332 21.6667L17.0365 24.8133L15.5565 30L19.9999 27.0367L24.4432 30L22.9632 24.8133L26.6666 21.6667L22.2232 21.11ZM11.3799 56.6667C11.3799 58.4467 12.0732 60.12 13.3332 61.38L18.6199 66.6667C19.8799 67.9267 21.5532 68.62 23.3332 68.62C25.1132 68.62 26.7865 67.9267 28.0465 66.6667L66.6666 28.0467C67.9266 26.7867 68.6199 25.1133 68.6199 23.3333C68.6199 21.5533 67.9266 19.88 66.6666 18.62L61.3799 13.3333C58.8599 10.8133 54.4732 10.8133 51.9532 13.3333L13.3332 51.9533C12.0732 53.2133 11.3799 54.8867 11.3799 56.6667ZM56.6666 18.0467L61.9532 23.3333L49.9999 35.2867L44.7132 30L56.6666 18.0467Z"
+                      fill="#2B5C89"
+                    ></path>
+                  </svg>
+                  Inspired, creative energy
+                </li>
+                <li>
+                  <svg
+                    width="80"
+                    height="65"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.3584 11.3585C6.24558 16.4714 3.42969 23.2694 3.42969 30.5001C3.42969 37.7307 6.24558 44.5289 11.3584 49.6418C16.4711 54.7547 23.2693 57.5703 30.5 57.5703C37.7307 57.5703 44.5286 54.7544 49.6417 49.6418C54.7547 44.5289 57.5703 37.7307 57.5703 30.5001C57.5703 23.2694 54.7544 16.4714 49.6417 11.3584C44.5286 6.24558 37.7307 3.42969 30.5 3.42969C23.2693 3.42969 16.4713 6.24558 11.3584 11.3585ZM6.40662 30.5001C6.40662 17.2149 17.2148 6.40662 30.5 6.40662C43.7851 6.40662 54.5934 17.2149 54.5934 30.5001C54.5934 43.7853 43.7851 54.5934 30.5 54.5934C17.2148 54.5934 6.40662 43.7853 6.40662 30.5001Z"
+                      fill="#2B5C89"
+                      stroke="#2B5C89"
+                      stroke-width="5"
+                    ></path>
+                  </svg>
+                  Practical, grounded advice
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <img src="cards.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                  <div class="col-12 col-lg-8">
-                    <div class="col-12 text-center">
-                      <hr />
-                      <h1 class="gradient-text">Meet Queen Machete</h1>
-                      <hr />
-                    </div>
-                    <p>
-                      Using my claircognizant abilities in conjunction with my
-                      knowledge of astrology and archetypal psychology, I
-                      deliver honest, direct readings focused on introspection
-                      and self reflection. With my unique approach of combining
-                      birthchart readings with tarot I am a blazing my own
-                      trail. I emphasize self compassion and personal growth. My
-                      passion for tarot and astrology defines my ethos. I am a
-                      unique, powerful reader who is committed to expanding my
-                      knowledge on a daily basis and authenticity is central to
-                      my being.
-                    </p>
-                  </div>
-                </div>
+    <!-----------------
+    - MEET ME SECTION -
+    ------------------>
+    <section id="meetSection">
+      <!-- Two Columns -->
+      <div class="container-fluid p-lg-4">
+        <div class="container">
+          <div class="row my-4">
+            <div
+              class="col-12 col-lg-4 order-2 order-lg-1 mt-4 mt-lg-0 p-0 text-center"
+            >
+              <div
+                class="fb-page"
+                data-href="https://www.facebook.com/queenmachetetarot/"
+                data-tabs="timeline, messages"
+                data-width=""
+                data-height="100%"
+                data-small-header="true"
+                data-adapt-container-width="true"
+                data-hide-cover="false"
+                data-show-facepile="true"
+              >
+                <blockquote
+                  cite="https://www.facebook.com/queenmachetetarot/"
+                  class="fb-xfbml-parse-ignore"
+                >
+                  <a href="https://www.facebook.com/queenmachetetarot/"
+                    >Queen Machete Tarot</a
+                  >
+                </blockquote>
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-8 text-center bg-white pt-4 mt-2 mt-lg-0 rounded shadow"
+            >
+              <img
+                width="150"
+                height="auto"
+                src="about.jpg"
+                class="img-fluid rounded-img mb-3 shadow"
+                alt=""
+              />
+              <h2>I'm Joaly Nicole.</h2>
+              <p class=" my-4 text-secondary">
+                Using my claircognizant abilities in conjunction with my
+                knowledge of astrology and archetypal psychology, I deliver
+                honest, direct readings focused on introspection and self
+                reflection. With my unique approach of combining birthchart
+                readings with tarot I am a blazing my own trail. I emphasize
+                self compassion and personal growth.<br /><a
+                  href="about.html"
+                  class="d-block mt-2"
+                  >Read More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                <div class="col-12 d-flex text-center pb-4">
-                  <div class="row three-columns">
-                    <div class="col-12 col-lg-4">
-                      <h2>Community</h2>
-                      <p>
-                        My professional page, www.facebook.com/queenmachetetarot
-                        has an audience numbering in the thousands. You can also
-                        find several dozen five star reviews.
-                      </p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <h2>10+ Years Experience</h2>
-                      <p>
-                        I studied formally at Seattle Tarot School and Sher
-                        institute of Metaphysics and is continuing education on
-                        various metaphysics related subjects.
-                      </p>
-                    </div>
-                    <div class="col-12 col-lg-4">
-                      <h2>Leader</h2>
-                      <p>
-                        I have been the administrator of several large Facebook
-                        groups that deal with metaphysics and I am experienced
-                        in the creation of my own original, thought provoking,
-                        educational, & sharable content.
-                      </p>
+    <!----------------------
+    - TESTIMONIALS SECTION -
+    ----------------------->
+    <section id="testimonialsSection">
+      <div class="container-fluid bg-purple px-0 px-lg-4">
+        <div class="py-lg-4">
+          <div class="row m-0 py-4">
+            <div
+              class="col-lg-7 p-0 pl-lg-4 py-lg-4 pb-lg-4 order-2 order-lg-1"
+            >
+              <div class="testimonials w-100">
+                <div class="container testimonials pb-4">
+                  <div class="row mb-1 pb-4 pb-lg-0">
+                    <div class="col-md-8 offset-md-2 col-10 offset-1 pb-3">
+                      <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
+                        data-ride="carousel"
+                      >
+                        <div class="carousel-inner p-3 bg-white rounded">
+                          <div class="carousel-item text-center active">
+                            <p class="m-0 pt-3 text-dark">
+                              Joaly is amazing. She gets right to the heart of
+                              your situation and she lays it down for you
+                              straight facts. She doesn’t sugarcoat but she is
+                              definitely thee to help you heal and get out of
+                              your mess. If you’re ready to grow and move
+                              forward you need to book with the QUEEN.
+                            </p>
+                            <h5 class="mt-4 mb-0">
+                              <strong class="text-warning text-uppercase"
+                                >Nikki L.</strong
+                              >
+                            </h5>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <p class="m-0 pt-3 text-dark">
+                              One of the most helpful and informative readings
+                              I've ever gotten! She was very thorough and
+                              interpreted the cards with nuance. Her reading
+                              accurately reflected what I've been going through
+                              and gave me much-needed advice. She doesn't coddle
+                              you and just tell you what you want to hear, she
+                              tells you what you NEED to hear!
+                            </p>
+                            <h5 class="mt-4 mb-0">
+                              <strong class="text-warning text-uppercase"
+                                >Sholani C.</strong
+                              >
+                            </h5>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <p class="m-0 pt-3 text-dark">
+                              By far one of the most experienced cartomancers
+                              I’ve ever come across. She highly intuitive and
+                              very direct. There is no bullsh*t in her game.
+                              I’ve had the honor of having her as a guiding
+                              light in my own practice of the craft. I assure
+                              you every word that leaves her throat chakra has
+                              absolute purpose!
+                            </p>
+                            <h5 class="mt-4 mb-0">
+                              <strong class="text-warning text-uppercase"
+                                >Bradley B.</strong
+                              >
+                            </h5>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <p class="m-0 pt-3 text-dark">
+                              Absolutely so grateful to have found this
+                              beautiful soul! This Queen's reading was filled
+                              with such eye opening knowledge that solidified I
+                              am on the right path! The accuracy brought me to
+                              tears & so much joy! I even got GOOSEBUMPS!!! I
+                              highly recommend anyone to get a reading from
+                              Queen! You will not be disappointed! The Universe
+                              does not lie! 🙏🏽👏🏾💯💜
+                            </p>
+                            <h5 class="mt-4 mb-0">
+                              <strong class="text-warning text-uppercase"
+                                >Barbie S.</strong
+                              >
+                            </h5>
+                          </div>
+                          <div class="carousel-item text-center">
+                            <p class="m-0 pt-3 text-dark">
+                              Joaly is a Tarot Goddess. She is so loving and
+                              truly cares for her clients. She will tell you the
+                              truth in the sweetest way, but with zero sugar
+                              coating. I love her authenticity. She has helped
+                              me tremendously & I highly recommend her services.
+                            </p>
+                            <h5 class="mt-4 mb-0">
+                              <strong class="text-warning text-uppercase"
+                                >Týra A.</strong
+                              >
+                            </h5>
+                          </div>
+                        </div>
+                        <ol class="carousel-indicators order-1">
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="0"
+                            class="active"
+                          >
+                            <div class="img-box border rounded-circle m-auto">
+                              <img
+                                class="d-block w-100 rounded-circle"
+                                src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-1/p240x240/82295390_10105638380596973_1806364254291361792_o.jpg?_nc_cat=105&_nc_eui2=AeFamLfpUyK5tLQDcyEnhPDa1X0Bk-UfRF2Spcnw0bqL7P04aBPIcSqSk5ejtko9kNjNPgLxBdd7TJJoE__uqO2O_uP7e92rvQcAw1c7CULg8g&_nc_ohc=ZTIGGy37u-sAX_D-zwD&_nc_ht=scontent.fsan1-2.fna&_nc_tp=1002&oh=1bdc9cf3b9e9a0474edc802dcd67a4f7&oe=5EDB3659"
+                                alt="First slide"
+                              />
+                            </div>
+                          </li>
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="1"
+                          >
+                            <div class="img-box border rounded-circle m-auto">
+                              <img
+                                class="d-block w-100 rounded-circle"
+                                src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-1/p240x240/71346147_2597691750252150_6716902407936147456_n.jpg?_nc_cat=107&_nc_eui2=AeFLMJxSxY9hpB2XVzQzW5KKBmvtfGCn3014VFaMR72Z3Zb20K6ClV6MUnLvRoE4TR4LY8XORfY5psZOqFLUFMGoWJ0Cs5fzCVjI-t3GabVipw&_nc_ohc=dLJM5AwWm4wAX-bc2p_&_nc_ht=scontent.fsan1-2.fna&_nc_tp=1002&oh=4778ccae97fa1c9846f3a0eddcf2c883&oe=5E961182"
+                                alt="Second slide"
+                              />
+                            </div>
+                          </li>
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="2"
+                          >
+                            <div class="img-box border rounded-circle m-auto">
+                              <img
+                                class="d-block w-100 rounded-circle"
+                                src="https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-1/p240x240/67349269_507795749968246_8365515034591232000_n.jpg?_nc_cat=106&_nc_eui2=AeHQIirE8kxyTXDcue2b_w7nnEn7vOJv98_lQPxhzlZLEvfvOUqOtXDpqfCub0B3qsycTruHMsjymOPTCAHp5LVYe_P76RPMHL3K2CZYTp11tg&_nc_ohc=qJrZ_rvXYRgAX8WU1X7&_nc_ht=scontent.fsan1-1.fna&_nc_tp=1002&oh=57e2f88adefdc90fcfeb2dd6f07dd979&oe=5E994972"
+                                alt="Third slide"
+                              />
+                            </div>
+                          </li>
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="3"
+                          >
+                            <div class="img-box border rounded-circle m-auto">
+                              <img
+                                class="d-block w-100 rounded-circle"
+                                src="https://scontent.fsan1-1.fna.fbcdn.net/v/t1.0-1/c0.0.240.240a/p240x240/58376913_2234423343302952_6011433821747019776_n.jpg?_nc_cat=111&_nc_eui2=AeGnfbRkjEoZdm7Qho3Ua3oIUQJoENsgfk8OkCG5luHCl4Xqkw-t80pwAfTJoUz5nCGOQNKauxX-reDo3VDkdtp-1x_LiN7X_-wqalUqSWx1cQ&_nc_ohc=5KphLgD3I48AX-4K82b&_nc_ht=scontent.fsan1-1.fna&_nc_tp=1003&oh=5a0cbaf2e5c56a53893eb9e96e0d3369&oe=5EA31463"
+                                alt="Fourth slide"
+                              />
+                            </div>
+                          </li>
+                          <li
+                            data-target="#carouselExampleIndicators"
+                            data-slide-to="4"
+                          >
+                            <div class="img-box border rounded-circle m-auto">
+                              <img
+                                class="d-block w-100 rounded-circle"
+                                src="https://scontent.fsan1-2.fna.fbcdn.net/v/t1.0-1/p240x240/83227792_850389682055938_797611770880458752_o.jpg?_nc_cat=100&_nc_eui2=AeH3s35XlPB_AYofnQ09dEqHP8TWIWuQuuZSaYeGjPKEyju_QoYKit7lNl7LNlnW9Aczu9PYzJ0iKlwBD2tH-Cb9ipr3GHFYo2oBGsYDPiWWEA&_nc_ohc=xLWpII43Q5sAX8-4eod&_nc_ht=scontent.fsan1-2.fna&_nc_tp=1002&oh=40d8f3cb3e19a7e87c6463b254cb3a2e&oe=5ED90748"
+                                alt="Fifth slide"
+                              />
+                            </div>
+                          </li>
+                        </ol>
+                        <a
+                          class="carousel-control-prev"
+                          href="#carouselExampleIndicators"
+                          role="button"
+                          data-slide="prev"
+                        >
+                          <span aria-hidden="true"
+                            ><div class="button">
+                              <i class="fas fa-chevron-left"></i></div
+                          ></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a
+                          class="carousel-control-next"
+                          href="#carouselExampleIndicators"
+                          role="button"
+                          data-slide="next"
+                        >
+                          <span aria-hidden="true">
+                            <span aria-hidden="true"
+                              ><div class="button">
+                                <i class="fas fa-chevron-right"></i></div></span
+                          ></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </div>
 
-    <!-----------
-    --- QUOTE ---
-    ------------>
-    <div class="img-bg container-fluid">
-      <div class="col-12 text-center">
-        <h2 class="text-light my-4">
-          I am on a mission to help people and change lives by assisting
-          individuals in reclaiming their personal power and healing the wounds
-          that bind them.
-        </h2>
+            <div
+              class="col-lg-5 text-white text-center text-lg-left mt-4 order-1 d-flex flex-column mt-lg-4 pr-lg-4"
+            >
+              <h1>DOZENS OF FIVE STAR REVIEWS</h1>
+              <p class="lead text-light">
+                Read more glowing testimonials
+                <a class="text-muted" href="testimonials.html">here.</a>
+              </p>
+              <div
+                class="d-flex justify-content-center justify-content-lg-start pb-4"
+              >
+                <div
+                  class="fb-like mr-2"
+                  data-href="https://www.facebook.com/queenmachetetarot"
+                  data-width=""
+                  data-layout="button_count"
+                  data-action="recommend"
+                  data-size="large"
+                  data-share="false"
+                ></div>
+                <div
+                  class="fb-share-button"
+                  data-href="https://www.facebook.com/queenmachetetarot/"
+                  data-layout="button"
+                  data-size="large"
+                >
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fqueenmachetetarot%2F&amp;src=sdkpreparse"
+                    class="fb-xfbml-parse-ignore"
+                    >Share</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <div class="p-4"></div>
 
     <!--------
     - FOOTER -
@@ -334,39 +757,97 @@
   </body>
 </html>
 <style>
-  body {
-    background: white;
+  .testimonials h2 {
+    position: relative;
+  }
+  .testimonials h2::after {
+    content: "";
+    width: 130px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: #07f7ff;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+  }
+  .carousel-inner .carousel-item .img-box {
+    width: 135px;
+    height: 135px;
+  }
+  .carousel-control-prev {
+    left: -100px;
+  }
+  .carousel-control-next {
+    right: -100px;
+  }
+  .carousel-indicators {
+    position: relative;
+    margin: 0 auto;
   }
 
-  .img-bg {
-    background: linear-gradient(
-        to right,
-        rgba(53, 200, 211, 0.4) 10%,
-        rgba(103, 80, 187, 0.4) 50%
-      ),
-      url(mainbg.jpg);
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-    background-size: cover;
-    height: 40vh;
-    display: flex;
-    align-items: center;
+  .carousel-indicators li {
+    background: none;
   }
 
-  .gradient-text {
-    background: linear-gradient(
-      to top,
-      rgba(211, 53, 211, 0.9) 10%,
-      rgba(103, 80, 187, 0.9) 50%
+  .carousel-indicators .active,
+  .carousel-indicators .active .img-box {
+    width: 60px !important;
+  }
+
+  .text-warning {
+    color: #ed1495 !important;
+  }
+
+  .btn-3, .btn-2 {
+    z-index: 9999;
+    flex: 1 1 auto;
+    margin: 10px auto;
+    padding: 10px 40px;
+    max-height: 50px;
+    max-width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+  }
+
+  .btn-3:hover, .btn-2:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+
+  .btn-3 {
+    background-image: linear-gradient(
+      to right,
+      #237cf1d2 0%,
+      #c29dff 51%,
+      #237cf1d2 100%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
-  @media screen and (max-width: 576px) {
-    .img-bg {
-      height: 65vh;
-      padding: 5vw;
+  .btn-2 {
+    background-image: linear-gradient(
+      to right,
+      #84fae0 0%,
+      #8f9ef4 51%,
+      #84fae0 100%
+    );
+    box-shadow: 0 0 20px rgb(172, 126, 190);
+  }
+
+  @media (min-width: 320px) and (max-width: 640px) {
+    .carousel-inner .carousel-item p {
+      font-size: 14px;
+    }
+    .carousel-control-prev {
+      left: -50px;
+    }
+    .carousel-control-next {
+      right: -50px;
     }
   }
 </style>
