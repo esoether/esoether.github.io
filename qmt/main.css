@@ -35,6 +35,10 @@ footer .navbar-brand h2 {
   color: rgb(10, 154, 250) !important;
 }
 
+.bg-trans {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .bg-primary {
   background: #0384D7 !important;
 }
@@ -133,9 +137,7 @@ footer .navbar-brand h2 {
   margin: 0 5px;
 }
 
-footer {
-  background: #baa0d8;
-}
+
 
 footer a:nth-child(2) {
   color: rgb(5, 97, 218);
@@ -294,7 +296,7 @@ footer a:hover {
 }
 
 .carousel-inner {
-  height: 225px;
+  height: min-content;
 }
 @media screen and (min-width: 993px) {
   .jumbotron {
@@ -437,9 +439,10 @@ body {
   background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: cover;
+  
 }
 
-#firstHook .photoHook {
+#secondHook .photoHook {
   background: linear-gradient(
     to right,
     rgba(53, 200, 211, 0.4) 10%,
@@ -450,15 +453,18 @@ body {
   height: 40vh;
 }
 
-#secondHook .photoHook {
+#firstHook .photoHook {
   background: linear-gradient(
-    to left,
-    rgba(53, 95, 211, 0.5) 10%,
-      rgba(187, 80, 187, 0.5) 50%), url('https://images.unsplash.com/photo-1547413749-dd39525702cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-  background-attachment: fixed;
+        to right,
+        rgba(53, 200, 211, 0.4) 10%,
+        rgba(103, 80, 187, 0.4) 50%
+      ),
+      url(mainbg.jpg);
+      background-attachment: fixed;
   background-repeat: repeat-y;
   background-size: cover;
   height: 40vh;
+  padding: 80px;
 }
 
 #introSection h1,
@@ -468,12 +474,36 @@ body {
   color: #2b5c89;
 }
 
-#longerIntroSection p {
-  font-size: 1.25rem;
+#longerIntroSection p, #meetSection p {
+  font-size: 1.15rem;
 }
 
 #longerIntroSection svg {
   width: 150px!important;
+}
+
+@media screen and (max-width: 576px) {
+  #firstHook .photoHook, #secondHook .photoHook {
+    height: 65vh;
+    padding: 5vw;
+  }
+
+  #longerIntroSection h4 {
+    font-size: 1.25rem;
+  }
+
+  #longerIntroSection p {
+    font-size: 1rem;
+  }
+  #meetSection p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #meetSection p {
+    font-size: 1.25rem;
+  }
 }
 
 .intro-list {
